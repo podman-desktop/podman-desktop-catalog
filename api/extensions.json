@@ -140,8 +140,8 @@
         "displayName": "Red Hat"
       },
       "extensionName": "redhat-sandbox",
-      "displayName": "Developer Sandbox",
-      "shortDescription": "Developer Sandbox sign up and provisioning",
+      "displayName": "Red Hat OpenShift Sandbox",
+      "shortDescription": "OpenShift Sandbox sign up and provisioning",
       "license": "Apache-2.0",
       "categories": ["Kubernetes"],
       "keywords": ["redhat", "sandbox", "provider", "remote"],
