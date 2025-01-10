@@ -1167,6 +1167,41 @@
           ]
         }
       ]
+    },
+    {
+      "publisher": {
+        "publisherName": "axel7083",
+        "displayName": "axel7083"
+      },
+      "extensionName": "podman-quadlet",
+      "displayName": "Podman Quadlet",
+      "shortDescription": "Integrate Podman Quadlets in Podman Desktop",
+      "license": "Apache-2.0",
+      "categories": ["Containers"],
+      "keywords": ["quadlets", "podman", "podlet"],
+      "versions": [
+        {
+          "version": "0.6.0",
+          "podmanDesktopVersion": "^1.15.0",
+          "preview": false,
+          "lastUpdated": "2025-01-10T00:00:00Z",
+          "ociUri": "ghcr.io/axel7083/pd-extension-quadlet:0.6.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/axel7083/podman-quadlet/0.6.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/axel7083/podman-quadlet/0.6.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/axel7083/podman-quadlet/0.6.0/LICENSE"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
