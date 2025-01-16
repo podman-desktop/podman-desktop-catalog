@@ -147,6 +147,26 @@
       "keywords": ["redhat", "sandbox", "provider", "remote"],
       "versions": [
         {
+          "version": "0.0.5",
+          "ociUri": "ghcr.io/redhat-developer/podman-desktop-sandbox-ext:0.0.5",
+          "lastUpdated": "2025-01-16T00:00:00Z",
+          "preview": false,
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/redhat-sandbox/0.0.5/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/redhat-sandbox/0.0.5/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/redhat-sandbox/0.0.5/LICENSE"
+            }
+          ]
+        },
+        {
           "version": "0.0.4",
           "ociUri": "ghcr.io/redhat-developer/podman-desktop-sandbox-ext:0.0.4",
           "lastUpdated": "2024-06-11T00:00:00Z",
