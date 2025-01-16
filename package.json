@@ -50,7 +50,7 @@
     "eslint-plugin-svelte": "^2.46.1",
     "eslint-plugin-unicorn": "^56.0.1",
     "globals": "^15.14.0",
-    "jsdom": "^25.0.1",
+    "jsdom": "^26.0.0",
     "micromark": "^4.0.1",
     "micromark-extension-directive": "^3.0.2",
     "moment": "^2.30.1",
