@@ -1173,7 +1173,7 @@
         "publisherName": "podman-desktop",
         "displayName": "Podman Desktop"
       },
-      "extensionName": "podman-quadlet",
+      "extensionName": "quadlet",
       "displayName": "Podman Quadlet",
       "shortDescription": "Integrate Podman Quadlets in Podman Desktop",
       "license": "Apache-2.0",
