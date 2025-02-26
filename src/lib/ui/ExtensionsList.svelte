@@ -12,10 +12,10 @@ let { extensionsByCategories }: Props = $props();
 let filteredExtensions = $state<CatalogExtensionInfo[]>([]);
 let showCategories = $state<boolean>(true);
 
-// Get the query from the URL
-function getQueryLimit(): number | undefined {
-  const query = new URLSearchParams(window.location.search).get('query');
-  return query ? parseInt(query, 10) : undefined;
+// Get the per_page from the URL
+function getPerPageLimit(): number | undefined {
+  const perPage = new URLSearchParams(window.location.search).get('per_page');
+  return perPage ? parseInt(perPage, 10) : undefined;
 }
 
 // Sort extensions based upon the last updated date based upon what's in .versions array
@@ -28,7 +28,7 @@ function getSortedExtensions(extensions: CatalogExtensionInfo[]): CatalogExtensi
 }
 
 $effect(() => {
-  const limit = getQueryLimit();
+  const limit = getPerPageLimit();
   showCategories = !limit;
 
   if (limit) {
@@ -47,7 +47,7 @@ $effect(() => {
 		<div
 		class="mt-2 grid min-[920px]:grid-cols-2 min-[1180px]:grid-cols-3 gap-3"
 		role="region"
-		aria-label="Queried extensions"
+		aria-label="Filtered extensions"
 		>
 			{#each filteredExtensions as extension}
 				<ExtensionByCategoryCard {extension} />
