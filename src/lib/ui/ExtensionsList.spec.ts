@@ -50,10 +50,10 @@ test('check categories', async () => {
   expect(category2).toBeInTheDocument();
 });
 
-test('if query is passed into window.location.search then it should be used to filter extensions', async () => {
+test('if per_page is passed into window.location.search then it should be used to filter extensions', async () => {
   // Mock query to be last 1
   vi.spyOn(window, 'location', 'get').mockReturnValue({
-    search: '?query=1',
+    search: '?per_page=1',
   } as unknown as Location);
 
   const extensionsByCategories: ExtensionByCategoryInfo[] = [
@@ -108,10 +108,10 @@ test('if query is passed into window.location.search then it should be used to f
   expect(category2).not.toBeInTheDocument();
 });
 
-test('if query is passed in with 4, it should show last 4 extensions even if there is 5 in the list', async () => {
+test('if per_page is passed in with 4, it should show last 4 extensions even if there is 5 in the list', async () => {
   // Mock query to be last 4
   vi.spyOn(window, 'location', 'get').mockReturnValue({
-    search: '?query=4',
+    search: '?per_page=4',
   } as unknown as Location);
 
   const extensionsByCategories: ExtensionByCategoryInfo[] = [
