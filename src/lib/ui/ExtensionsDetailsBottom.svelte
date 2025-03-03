@@ -46,7 +46,7 @@ $effect(() => {
 					<th>Version</th>
 					<th>Released</th>
 				</tr>
-				{#each versions as version}
+				{#each versions as version (version.version)}
 					<tr>
 						<td>{version.version}</td>
 						<td>{moment(version.lastUpdated).format('YYYY-MM-DD')}</td>
