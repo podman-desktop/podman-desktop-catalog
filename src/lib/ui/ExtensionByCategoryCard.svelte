@@ -1,6 +1,6 @@
 <script lang="ts">
 import type { CatalogExtensionInfo } from '../api/extensions-info';
-import { setCurrentExtension } from '../extensions.svelte';
+import { setCurrentExtension } from '../extensions';
 import ExtensionIcon from './ExtensionIcon.svelte';
 
 const { extension }: { extension: CatalogExtensionInfo } = $props();

@@ -7,7 +7,7 @@ const { extensionsByCategories }: { extensionsByCategories: ExtensionByCategoryI
 </script>
 
 <div class="flex flex-col h-full">
-	{#each extensionsByCategories as extensionByCategoryInfo}
+	{#each extensionsByCategories as extensionByCategoryInfo (extensionByCategoryInfo.category)}
 		<ExtensionsByCategory {extensionByCategoryInfo} />
 	{/each}
 </div>

@@ -20,7 +20,7 @@ import { beforeEach, describe, expect, test, vi } from 'vitest';
 
 import catalogOfExtensions from '../../static/api/extensions.json';
 import type { CatalogExtensionInfo } from './api/extensions-info';
-import { catalogExtensions, getCurrentExtension, initCatalog, setCurrentExtension } from './extensions.svelte';
+import { catalogExtensions, getCurrentExtension, initCatalog, setCurrentExtension } from './extensions';
 
 const fetchMock = vi.fn();
 

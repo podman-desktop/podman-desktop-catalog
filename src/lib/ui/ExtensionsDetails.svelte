@@ -2,7 +2,7 @@
 import { CloseButton } from '@podman-desktop/ui-svelte';
 
 import type { CatalogExtensionInfo } from '$lib/api/extensions-info';
-import { setCurrentExtension } from '$lib/extensions.svelte';
+import { setCurrentExtension } from '$lib/extensions';
 
 import ExtensionsDetailsBottom from './ExtensionsDetailsBottom.svelte';
 import ExtensionsDetailsTop from './ExtensionsDetailsTop.svelte';

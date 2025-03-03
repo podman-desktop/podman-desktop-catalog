@@ -2,11 +2,11 @@
 import { onMount } from 'svelte';
 
 import Appearance from '$lib/Appearance.svelte';
+import { catalogExtensions, getCurrentExtension, initCatalog } from '$lib/extensions';
 import ExtensionsDetails from '$lib/ui/ExtensionsDetails.svelte';
 import ExtensionsList from '$lib/ui/ExtensionsList.svelte';
 
 import type { ExtensionByCategoryInfo } from '../lib/api/extensions-info';
-import { catalogExtensions, getCurrentExtension, initCatalog } from '../lib/extensions.svelte';
 
 const uniqueCategories: string[] = $state([]);
 const extensionsByCategories: ExtensionByCategoryInfo[] = $state([]);
