@@ -40,7 +40,7 @@ $effect(() => {
 
 <div class="flex flex-col h-full">
 	{#if showCategories}
-		{#each extensionsByCategories as extensionByCategoryInfo}
+		{#each extensionsByCategories as extensionByCategoryInfo (extensionByCategoryInfo.category)}
 			<ExtensionsByCategory {extensionByCategoryInfo} />
 		{/each}
 	{:else}
@@ -49,7 +49,7 @@ $effect(() => {
 		role="region"
 		aria-label="Filtered extensions"
 		>
-			{#each filteredExtensions as extension}
+			{#each filteredExtensions as extension (extension.id)}
 				<ExtensionByCategoryCard {extension} />
 			{/each}
 		</div>
