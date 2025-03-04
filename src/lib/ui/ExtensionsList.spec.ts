@@ -119,6 +119,7 @@ test('if per_page is passed in with 4, it should show last 4 extensions even if 
       category: 'category1',
       extensions: [
         {
+          id: 'dummy1',
           displayName: 'dummy1',
           versions: [
             {
@@ -129,6 +130,7 @@ test('if per_page is passed in with 4, it should show last 4 extensions even if 
           ],
         } as unknown as CatalogExtensionInfo,
         {
+          id: 'dummy2',
           displayName: 'dummy2',
           versions: [
             {
@@ -139,6 +141,7 @@ test('if per_page is passed in with 4, it should show last 4 extensions even if 
           ],
         } as unknown as CatalogExtensionInfo,
         {
+          id: 'dummy3',
           displayName: 'dummy3',
           versions: [
             {
@@ -149,6 +152,7 @@ test('if per_page is passed in with 4, it should show last 4 extensions even if 
           ],
         } as unknown as CatalogExtensionInfo,
         {
+          id: 'dummy4',
           displayName: 'dummy4',
           versions: [
             {
@@ -159,6 +163,7 @@ test('if per_page is passed in with 4, it should show last 4 extensions even if 
           ],
         } as unknown as CatalogExtensionInfo,
         {
+          id: 'dummy5',
           displayName: 'dummy5',
           versions: [
             {
