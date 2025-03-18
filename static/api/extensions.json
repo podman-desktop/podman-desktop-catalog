@@ -13,22 +13,22 @@
       "keywords": ["redhat", "authentication", "login"],
       "versions": [
         {
-          "version": "1.0.4",
+          "version": "1.0.5",
           "preview": false,
           "lastUpdated": "2025-03-13T00:00:00Z",
-          "ociUri": "quay.io/redhat-developer/podman-desktop-redhat-account-ext:1.0.4",
+          "ociUri": "quay.io/redhat-developer/podman-desktop-redhat-account-ext:1.0.5",
           "files": [
             {
               "assetType": "icon",
-              "data": "https://registry.podman-desktop.io/api/extensions/redhat/redhat-authentication/1.0.4/icon.png"
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/redhat-authentication/1.0.5/icon.png"
             },
             {
               "assetType": "README",
-              "data": "https://registry.podman-desktop.io/api/extensions/redhat/redhat-authentication/1.0.4/README.md"
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/redhat-authentication/1.0.5/README.md"
             },
             {
               "assetType": "LICENSE",
-              "data": "https://registry.podman-desktop.io/api/extensions/redhat/redhat-authentication/1.0.4/LICENSE.txt"
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/redhat-authentication/1.0.5/LICENSE.txt"
             }
           ]
         },
