@@ -81,8 +81,8 @@ importers:
         specifier: ^2.0.3
         version: 2.0.3(eslint@9.22.0(jiti@1.21.6))(typescript@5.8.2)
       eslint-plugin-file-progress:
-        specifier: ^3.0.1
-        version: 3.0.1(eslint@9.22.0(jiti@1.21.6))
+        specifier: ^3.0.2
+        version: 3.0.2(eslint@9.22.0(jiti@1.21.6))
       eslint-plugin-import:
         specifier: ^2.31.0
         version: 2.31.0(@typescript-eslint/parser@8.26.1(eslint@9.22.0(jiti@1.21.6))(typescript@5.8.2))(eslint-import-resolver-typescript@4.0.0)(eslint@9.22.0(jiti@1.21.6))
@@ -1537,8 +1537,8 @@ packages:
       eslint: ^8.0.0
       typescript: '>=4.0.0'
 
-  eslint-plugin-file-progress@3.0.1:
-    resolution: {integrity: sha512-sPUOIifutW3Ehhmujt40IU5ytXL6HnuGVev2n9cp4d5fzVOoQp1K17DJ/I+cRdctmTpMcYit/fOuF9efjmD98A==}
+  eslint-plugin-file-progress@3.0.2:
+    resolution: {integrity: sha512-wX54LVbKP1MOe+yXI6CkfyseUkgiBgvHDgb3mWZ5j6xfQa81hcLzeiOew+rIZuxZQ+M3UHLC4pOGRYUP6OKsyA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: ^9.0.0
@@ -2349,8 +2349,8 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  nanospinner@1.2.0:
-    resolution: {integrity: sha512-dGxYcEj8YhuxjVO3PYmnj1nBhtwUkvuwYbLl/MduBPmQUPy3xBtG/ScJgqZgntQkX44UQaCSlFeW4rS5fUR/Sw==}
+  nanospinner@1.2.2:
+    resolution: {integrity: sha512-Zt/AmG6qRU3e+WnzGGLuMCEAO/dAu45stNbHY223tUxldaDAeE+FxSPsd9Q+j+paejmm0ZbrNVs5Sraqy3dRxA==}
 
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
@@ -4724,10 +4724,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-file-progress@3.0.1(eslint@9.22.0(jiti@1.21.6)):
+  eslint-plugin-file-progress@3.0.2(eslint@9.22.0(jiti@1.21.6)):
     dependencies:
       eslint: 9.22.0(jiti@1.21.6)
-      nanospinner: 1.2.0
+      nanospinner: 1.2.2
       picocolors: 1.1.1
 
   eslint-plugin-import@2.31.0(@typescript-eslint/parser@8.26.1(eslint@9.22.0(jiti@1.21.6))(typescript@5.8.2))(eslint-import-resolver-typescript@4.0.0)(eslint@9.22.0(jiti@1.21.6)):
@@ -5702,7 +5702,7 @@ snapshots:
 
   nanoid@3.3.8: {}
 
-  nanospinner@1.2.0:
+  nanospinner@1.2.2:
     dependencies:
       picocolors: 1.1.1
 
