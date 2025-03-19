@@ -47,7 +47,7 @@ const compat = new FlatCompat({
 
 export default [
   {
-    ignores: ['**/dist/**/*', '**/.svelte-kit/**', '**/coverage/**', '**/node_modules/**'],
+    ignores: ['**/dist/**/*', '**/.svelte-kit/**', '**/coverage/**', '**/node_modules/**', '**/*.config.*js'],
   },
   js.configs.recommended,
   ...typescriptLint.configs.recommended,
