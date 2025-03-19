@@ -1,7 +1,7 @@
 const colorPalette = require('./tailwind-color-palette.json');
 
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ['./src/**/*.{html,js,svelte,ts}', './node_modules/@podman-desktop/ui-svelte/dist/**/*.{svelte,ts,css}'],
   theme: {
     colors: {
