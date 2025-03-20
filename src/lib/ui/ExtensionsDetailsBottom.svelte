@@ -29,7 +29,7 @@ $effect(() => {
 </script>
 
 <div class="w-full min-h-full overflow-y-visible leading-6 text-[var(--pd-details-body-text)] p-4">
-	<div class="bg-[var(--pd-invert-content-card-bg)] p-4 rounded">
+	<div class="bg-[var(--pd-invert-content-card-bg)] p-4 rounded-sm">
 		{#if readmeContent}
 			<Markdown markdown={readmeContent} />
 		{:else}
@@ -38,7 +38,7 @@ $effect(() => {
 	</div>
 
 	<!-- List all versions -->
-	<div class="flex flex-col items-center mt-4 bg-[var(--pd-invert-content-card-bg)] rounded">
+	<div class="flex flex-col items-center mt-4 bg-[var(--pd-invert-content-card-bg)] rounded-sm">
 		<!-- table with 2 columns, version, date of the release-->
 		<table class="table-fixed">
 			<thead>

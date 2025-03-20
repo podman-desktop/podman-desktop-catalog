@@ -59,6 +59,8 @@ $effect(() => {
 <!-- The markdown rendered has it's own style that you'll have to customize / check against podman desktop
 UI guidelines -->
 <style lang="postcss">
+  @reference "tailwindcss";
+
 	.markdown > :global(p) {
 		line-height: normal;
 		padding-bottom: 8px;
