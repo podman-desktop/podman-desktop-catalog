@@ -27,8 +27,8 @@ importers:
         specifier: ^6.7.2
         version: 6.7.2
       '@podman-desktop/ui-svelte':
-        specifier: 1.17.1
-        version: 1.17.1(svelte-fa@4.0.3(svelte@5.23.2))(svelte@5.23.2)
+        specifier: 1.17.2
+        version: 1.17.2(svelte-fa@4.0.3(svelte@5.23.2))(svelte@5.23.2)
       '@sveltejs/adapter-auto':
         specifier: ^5.0.0
         version: 5.0.0(@sveltejs/kit@2.20.1(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.23.2)(vite@5.4.11(@types/node@22.7.7)(lightningcss@1.29.2)))(svelte@5.23.2)(vite@5.4.11(@types/node@22.7.7)(lightningcss@1.29.2)))
@@ -566,8 +566,8 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
-  '@podman-desktop/ui-svelte@1.17.1':
-    resolution: {integrity: sha512-3P4r5mGJnTkG0SAZWbSzjMproYhCMod/LAqYyXyJ9ZdctP3mfMgcQLGwvKWF7Zo88nV+THdqJM1Z7Jp51LoZrw==}
+  '@podman-desktop/ui-svelte@1.17.2':
+    resolution: {integrity: sha512-7hGnfamqXA9IGJP9DJ1Jnz3O6rHyD4XWMwBxZJdNLNZGq5SQiDQwh8AePySUy505CD6B2EFkf1m1jlJaxsQuSg==}
     peerDependencies:
       svelte: ^4.0.0 || ^5.0.0
       svelte-fa: ^4.0.0
@@ -2913,9 +2913,6 @@ packages:
   symbol-tree@3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
 
-  tailwindcss@4.0.14:
-    resolution: {integrity: sha512-92YT2dpt671tFiHH/e1ok9D987N9fHD5VWoly1CdPD/Cd1HMglvZwP3nx2yTj2lbXDAHt8QssZkxTLCCTNL+xw==}
-
   tailwindcss@4.0.15:
     resolution: {integrity: sha512-6ZMg+hHdMJpjpeCCFasX7K+U615U9D+7k5/cDK/iRwl6GptF24+I/AbKgOnXhVKePzrEyIXutLv36n4cRsq3Sg==}
 
@@ -3594,7 +3591,7 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
-  '@podman-desktop/ui-svelte@1.17.1(svelte-fa@4.0.3(svelte@5.23.2))(svelte@5.23.2)':
+  '@podman-desktop/ui-svelte@1.17.2(svelte-fa@4.0.3(svelte@5.23.2))(svelte@5.23.2)':
     dependencies:
       '@fortawesome/fontawesome-free': 6.7.2
       '@fortawesome/free-brands-svg-icons': 6.7.2
@@ -6316,8 +6313,6 @@ snapshots:
       zimmerframe: 1.1.2
 
   symbol-tree@3.2.4: {}
-
-  tailwindcss@4.0.14: {}
 
   tailwindcss@4.0.15: {}
 
