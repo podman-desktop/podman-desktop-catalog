@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "@eslint/compat": "^1.2.7",
+    "@eslint/compat": "^1.2.8",
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.23.0",
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
