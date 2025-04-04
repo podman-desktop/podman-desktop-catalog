@@ -129,8 +129,8 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1(svelte@5.25.6)
       tailwindcss:
-        specifier: ^4.1.1
-        version: 4.1.1
+        specifier: ^4.1.2
+        version: 4.1.2
       tslib:
         specifier: ^2.8.1
         version: 2.8.1
@@ -2922,6 +2922,9 @@ packages:
 
   tailwindcss@4.1.1:
     resolution: {integrity: sha512-QNbdmeS979Efzim2g/bEvfuh+fTcIdp1y7gA+sb6OYSW74rt7Cr7M78AKdf6HqWT3d5AiTb7SwTT3sLQxr4/qw==}
+
+  tailwindcss@4.1.2:
+    resolution: {integrity: sha512-VCsK+fitIbQF7JlxXaibFhxrPq4E2hDcG8apzHUdWFMCQWD8uLdlHg4iSkZ53cgLCCcZ+FZK7vG8VjvLcnBgKw==}
 
   tapable@2.2.1:
     resolution: {integrity: sha512-GNzQvQTOIP6RyTfE2Qxb8ZVlNmw0n88vp1szwWRimP02mnTsx3Wtn5qRdqY9w2XduFNUgvOwhNnQsjwCp+kqaQ==}
@@ -6318,6 +6321,8 @@ snapshots:
   symbol-tree@3.2.4: {}
 
   tailwindcss@4.1.1: {}
+
+  tailwindcss@4.1.2: {}
 
   tapable@2.2.1: {}
 
