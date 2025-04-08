@@ -39,7 +39,7 @@ importers:
         specifier: ^2.20.4
         version: 2.20.4(@sveltejs/vite-plugin-svelte@5.0.3(svelte@5.25.8)(vite@6.2.5(@types/node@22.7.7)(jiti@2.4.2)(lightningcss@1.29.2)))(svelte@5.25.8)(vite@6.2.5(@types/node@22.7.7)(jiti@2.4.2)(lightningcss@1.29.2))
       '@sveltejs/vite-plugin-svelte':
-        specifier: 4.0.4
+        specifier: 5.0.3
         version: 5.0.3(svelte@5.25.8)(vite@6.2.5(@types/node@22.7.7)(jiti@2.4.2)(lightningcss@1.29.2))
       '@tailwindcss/vite':
         specifier: ^4.1.3
