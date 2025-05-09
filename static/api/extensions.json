@@ -1479,6 +1479,60 @@
           ]
         }
       ]
+    },
+    {
+      "publisher": {
+        "publisherName": "redhat",
+        "displayName": "Red Hat"
+      },
+      "extensionName": "rhel-lightspeed",
+      "displayName": "RHEL Lightspeed",
+      "shortDescription": "RHEL Lightspeed",
+      "license": "Apache-2.0",
+      "categories": ["AI"],
+      "keywords": ["rhel", "lightspeed"],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "preview": false,
+          "lastUpdated": "2025-05-12T11:00:00Z",
+          "ociUri": "ghcr.io/redhat-developer/podman-desktop-redhat-lightspeed-ext:0.1.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-lightspeed/0.1.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-lightspeed/0.1.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-lightspeed/0.1.0/LICENSE"
+            }
+          ]
+        },
+        {
+          "version": "preview",
+          "preview": true,
+          "lastUpdated": "2025-05-12T11:00:00Z",
+          "ociUri": "ghcr.io/redhat-developer/podman-desktop-redhat-lightspeed-ext:next",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-lightspeed/preview/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-lightspeed/preview/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-lightspeed/preview/LICENSE"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
