@@ -1533,6 +1533,40 @@
           ]
         }
       ]
+    },
+    {
+      "publisher": {
+        "publisherName": "redhat",
+        "displayName": "Red Hat"
+      },
+      "extensionName": "rhel-vms",
+      "displayName": "RHEL VMs",
+      "shortDescription": "Create Red Hat Enterprise Linux VMs easily",
+      "license": "Apache-2.0",
+      "categories": ["RHEL", "VMs"],
+      "keywords": ["rhel", "vm"],
+      "versions": [
+        {
+          "version": "0.4.0",
+          "preview": false,
+          "lastUpdated": "2025-05-12T11:00:00Z",
+          "ociUri": "ghcr.io/redhat-developer/podman-desktop-rhel-ext:0.4.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-vms/0.4.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-vms/0.4.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-vms/0.4.0/LICENSE"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
