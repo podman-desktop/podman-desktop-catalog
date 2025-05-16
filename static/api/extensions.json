@@ -1479,6 +1479,27 @@
       "keywords": ["kubernetes", "minikube", "provider", "local"],
       "versions": [
         {
+          "version": "0.4.0",
+          "podmanDesktopVersion": "^1.18.0",
+          "preview": false,
+          "lastUpdated": "2025-05-16T00:00:00Z",
+          "ociUri": "ghcr.io/minc-org/minc-extension:0.4.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/minc-org/minc/0.4.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/minc-org/minc/0.4.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/minc-org/minc/0.4.0/LICENSE"
+            }
+          ]
+        },
+        {
           "version": "0.3.0",
           "podmanDesktopVersion": "^1.18.0",
           "preview": false,
