@@ -1514,6 +1514,26 @@
       "keywords": ["rhel", "lightspeed"],
       "versions": [
         {
+          "version": "0.2.0",
+          "preview": false,
+          "lastUpdated": "2025-05-19T11:00:00Z",
+          "ociUri": "ghcr.io/redhat-developer/podman-desktop-redhat-lightspeed-ext:0.2.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-lightspeed/0.2.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-lightspeed/0.2.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-lightspeed/0.2.0/LICENSE"
+            }
+          ]
+        },
+        {
           "version": "0.1.0",
           "preview": false,
           "lastUpdated": "2025-05-12T11:00:00Z",
