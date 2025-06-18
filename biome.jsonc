@@ -6,7 +6,7 @@
   },
   "files": {
     "maxSize": 1600000,
-    "ignore": ["**/coverage/**", "**/dist/**", "**/.svelte-kit/**"]
+    "includes": ["**", "!**/coverage/**", "!**/dist/**", "!**/.svelte-kit/**"]
   },
   "javascript": {
     "formatter": {
@@ -29,7 +29,5 @@
   "linter": {
     "enabled": true
   },
-  "organizeImports": {
-    "enabled": false
-  }
+  "assist": { "actions": { "source": { "organizeImports": "off" } } }
 }
