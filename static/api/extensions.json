@@ -1486,6 +1486,27 @@
       "keywords": ["kubernetes", "manifest", "templates", "create"],
       "versions": [
         {
+          "version": "0.3.0",
+          "podmanDesktopVersion": "^1.16.0",
+          "preview": false,
+          "lastUpdated": "2025-06-20T12:00:00Z",
+          "ociUri": "ghcr.io/podman-desktop/extension-kreate:0.3.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/kreate/0.3.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/kreate/0.3.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/kreate/0.3.0/LICENSE"
+            }
+          ]
+        },
+        {
           "version": "0.2.0",
           "podmanDesktopVersion": "^1.16.0",
           "preview": false,
