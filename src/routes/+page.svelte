@@ -2,18 +2,17 @@
 import { onMount } from 'svelte';
 
 import Appearance from '$lib/Appearance.svelte';
+import { catalogExtensions } from '$lib/catalogExtensions';
 import ExtensionsDetails from '$lib/ui/ExtensionsDetails.svelte';
 import ExtensionsList from '$lib/ui/ExtensionsList.svelte';
 
 import type { ExtensionByCategoryInfo } from '../lib/api/extensions-info';
-import { catalogExtensions, getCurrentExtension, initCatalog } from '../lib/extensions.svelte';
+import { getCurrentExtension } from '../lib/extensions.svelte';
 
 const uniqueCategories: string[] = $state([]);
 const extensionsByCategories: ExtensionByCategoryInfo[] = $state([]);
 
 onMount(async () => {
-  await initCatalog();
-
   // collect all the categories of all the extensions
   const categories = catalogExtensions.flatMap(ext => ext.categories);
   // need to remove any duplicates from this array of string

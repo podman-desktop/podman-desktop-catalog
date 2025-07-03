@@ -26,7 +26,7 @@ export interface CatalogExtensionVersionInfo {
   ociUri: string;
   preview: boolean;
   lastUpdated: Date;
-  files: CatalogExtensionVersionFileInfo[];
+  files: readonly CatalogExtensionVersionFileInfo[];
 }
 
 export interface CatalogExtensionInfo {
@@ -34,12 +34,11 @@ export interface CatalogExtensionInfo {
   publisherName: string;
   publisherDisplayName: string;
   extensionName: string;
-  categories: string[];
+  categories: readonly string[];
   shortDescription: string;
   displayName: string;
-  keywords: string[];
-  unlisted: boolean;
-  versions: CatalogExtensionVersionInfo[];
+  keywords: readonly string[];
+  versions: readonly CatalogExtensionVersionInfo[];
 }
 
 export interface ExtensionByCategoryInfo {
