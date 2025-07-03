@@ -6,13 +6,13 @@ import ExtensionsDetails from '$lib/ui/ExtensionsDetails.svelte';
 import ExtensionsList from '$lib/ui/ExtensionsList.svelte';
 
 import type { ExtensionByCategoryInfo } from '../lib/api/extensions-info';
-import { catalogExtensions, getCurrentExtension, initCatalog } from '../lib/extensions.svelte';
+import {  getCurrentExtension } from '../lib/extensions.svelte';
+import { catalogExtensions } from '$lib/extensions';
 
 const uniqueCategories: string[] = $state([]);
 const extensionsByCategories: ExtensionByCategoryInfo[] = $state([]);
 
 onMount(async () => {
-  await initCatalog();
 
   // collect all the categories of all the extensions
   const categories = catalogExtensions.flatMap(ext => ext.categories);

@@ -30,15 +30,11 @@ export interface CatalogExtensionVersionInfo {
 }
 
 export interface CatalogExtensionInfo {
-  id: string;
-  publisherName: string;
-  publisherDisplayName: string;
   extensionName: string;
   categories: string[];
   shortDescription: string;
   displayName: string;
   keywords: string[];
-  unlisted: boolean;
   versions: CatalogExtensionVersionInfo[];
 }
 

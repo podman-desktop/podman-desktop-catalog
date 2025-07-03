@@ -15,7 +15,7 @@ const { extensionByCategoryInfo }: { extensionByCategoryInfo: ExtensionByCategor
 		role="region"
 		aria-label="Extensions of category {extensionByCategoryInfo.category}"
 	>
-		{#each extensionByCategoryInfo.extensions as extension (extension.id)}
+		{#each extensionByCategoryInfo.extensions as extension}
 			<ExtensionByCategoryCard {extension} />
 		{/each}
 	</div>
