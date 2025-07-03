@@ -6,7 +6,7 @@
   },
   "files": {
     "maxSize": 1600000,
-    "includes": ["**", "!**/coverage/**", "!**/dist/**", "!**/.svelte-kit/**"]
+    "includes": ["**", "!**/coverage/**", "!**/dist/**", "!**/.svelte-kit/**", "!static/api/extensions.json"]
   },
   "javascript": {
     "formatter": {
