@@ -16,6 +16,8 @@
  * SPDX-License-Identifier: Apache-2.0
  ***********************************************************************/
 
+import { SvelteDate } from 'svelte/reactivity';
+
 import type {
   CatalogExtensionInfo,
   CatalogExtensionVersionFileInfo,
@@ -84,7 +86,7 @@ export async function initCatalog(): Promise<void> {
                   podmanDesktopVersion: String(rawVersion.podmanDesktopVersion),
                   ociUri: String(rawVersion.ociUri),
                   preview: Boolean(rawVersion.preview),
-                  lastUpdated: new Date(String(rawVersion.lastUpdated)),
+                  lastUpdated: new SvelteDate(String(rawVersion.lastUpdated)),
                   files,
                 };
                 versions.push(version);
