@@ -27,7 +27,7 @@
     "@sveltejs/adapter-auto": "^6.0.2",
     "@sveltejs/adapter-static": "^3.0.9",
     "@sveltejs/kit": "^2.28.0",
-    "@sveltejs/vite-plugin-svelte": "6.1.1",
+    "@sveltejs/vite-plugin-svelte": "6.1.2",
     "@tailwindcss/vite": "^4.1.11",
     "@testing-library/jest-dom": "^6.6.4",
     "@testing-library/svelte": "^5.2.8",
