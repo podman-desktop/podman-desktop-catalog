@@ -1573,6 +1573,42 @@
     },
     {
       "publisher": {
+        "publisherName": "podman-desktop",
+        "displayName": "Podman Desktop"
+      },
+      "extensionName": "apple-container",
+      "displayName": "Apple container extension",
+      "shortDescription": "List/Manage Apple containers on macOS",
+      "license": "Apache-2.0",
+      "categories": ["Containers"],
+      "keywords": ["container", "apple", "macos"],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "podmanDesktopVersion": "^1.21.0",
+          "preview": false,
+          "lastUpdated": "2025-09-15T12:00:00Z",
+          "ociUri": "ghcr.io/podman-desktop/extension-apple-container:0.1.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/apple-container/0.1.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/apple-container/0.1.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/apple-container/0.1.0/LICENSE"
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "publisher": {
         "publisherName": "minc-org",
         "displayName": "Minc Organization"
       },
