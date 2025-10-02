@@ -22,7 +22,7 @@
     "@eslint/compat": "^1.4.0",
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.36.0",
-    "@fortawesome/free-solid-svg-icons": "^7.0.1",
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "@podman-desktop/ui-svelte": "1.22.0",
     "@sveltejs/adapter-auto": "^6.1.0",
     "@sveltejs/adapter-static": "^3.0.9",
