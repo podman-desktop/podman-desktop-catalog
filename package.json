@@ -21,7 +21,7 @@
     "@biomejs/biome": "^2.2.5",
     "@eslint/compat": "^1.4.0",
     "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.36.0",
+    "@eslint/js": "^9.37.0",
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "@podman-desktop/ui-svelte": "1.22.0",
     "@sveltejs/adapter-auto": "^6.1.1",
