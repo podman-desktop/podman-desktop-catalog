@@ -33,7 +33,7 @@ jobs:
       matrix:
         os: [windows-2022, ubuntu-24.04, macos-15]
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       - uses: pnpm/action-setup@v4
         name: Install pnpm
