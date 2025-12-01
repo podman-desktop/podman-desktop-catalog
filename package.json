@@ -20,7 +20,7 @@
   "devDependencies": {
     "@biomejs/biome": "^2.3.8",
     "@eslint/compat": "^2.0.0",
-    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/eslintrc": "^3.3.3",
     "@eslint/js": "^9.39.1",
     "@fortawesome/free-solid-svg-icons": "^7.1.0",
     "@podman-desktop/ui-svelte": "1.23.1",
