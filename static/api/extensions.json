@@ -264,19 +264,19 @@
           "version": "2.1.3",
           "preview": false,
           "ociUri": "ghcr.io/crc-org/crc-extension:2.1.3",
-          "lastUpdated": "2024-08-13T00:00:00Z",
+          "lastUpdated": "2025-12-11T00:00:00Z",
           "files": [
             {
               "assetType": "icon",
-              "data": "https://registry.podman-desktop.io/api/extensions/redhat/openshift-local/2.0.0/icon.png"
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/openshift-local/2.1.3/icon.png"
             },
             {
               "assetType": "README",
-              "data": "https://registry.podman-desktop.io/api/extensions/redhat/openshift-local/2.0.0/README.md"
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/openshift-local/2.1.3/README.md"
             },
             {
               "assetType": "LICENSE",
-              "data": "https://registry.podman-desktop.io/api/extensions/redhat/openshift-local/2.0.0/LICENSE.txt"
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/openshift-local/2.1.3/LICENSE.txt"
             }
           ]
         },
