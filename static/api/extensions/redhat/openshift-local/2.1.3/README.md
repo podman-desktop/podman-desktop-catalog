@@ -1,9 +1,9 @@
 # Red Hat OpenShift Local extension
 
 Integration for [Red Hat OpenShift Local][product page] clusters. It will help you install and set up the environment, and allows you to control the lifecycle and configuration from [Podman Desktop][podman-desktop]. Some of the features available in the extension include:
-  * Start/Stop/Restart/Delete OpenShift Local clusters
-  * Change the OpenShift Local cluster preset
-  * Update the OpenShift Local version
+* Start/Stop/Restart/Delete OpenShift Local clusters
+* Change the OpenShift Local cluster preset
+* Update the OpenShift Local version
 
 ## Index
 - [Installation](#installation)
@@ -24,9 +24,9 @@ Each preset of OpenShift Local has their own requirements, please check the [doc
 
 
 #### Preset types
-  * **Microshift (experimental)**  
+* **Microshift (experimental)**  
     Provides a lightweight and optimized environment with a limited set of services.
-  * **OpenShift**  
+* **OpenShift**  
     Provides a single node OpenShift cluster with a fuller set of services, including a web console (requires more resources).
 
 
@@ -105,7 +105,7 @@ Paste `registry.access.redhat.com/ubi8/httpd-24` into the `Image to pull` field 
 
 ![Pulling an image dialog](https://raw.githubusercontent.com/containers/podman-desktop-media/openshift-local/readme/6-crc-ext-pull-image-form.png)
 
-After the image was sucessfully pulled from the registry press the `Done` button to navigate back to the **Images** page:
+After the image was successfully pulled from the registry press the `Done` button to navigate back to the **Images** page:
 
 ![Image successfully pulled](https://raw.githubusercontent.com/containers/podman-desktop-media/openshift-local/readme/7-crc-ext-pull-image-result.png)
 
