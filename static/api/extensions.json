@@ -31,7 +31,8 @@
               "data": "https://registry.podman-desktop.io/api/extensions/redhat/redhat-authentication/1.0.7/LICENSE.txt"
             }
           ]
-        },{
+        },
+        {
           "version": "1.0.6",
           "preview": false,
           "lastUpdated": "2025-03-26T00:00:00Z",
