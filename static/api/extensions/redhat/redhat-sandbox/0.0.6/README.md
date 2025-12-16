@@ -1,6 +1,6 @@
 # Podman Desktop Developer Sandbox Extension
 
-This extension puts you to just few clicks away form deploying your application to [Developer Sandbox](https://developers.redhat.com/developer-sandbox), a 30 days no cost shared cluster on [OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift).
+This extension puts you to just few clicks away from deploying your application to [Developer Sandbox](https://developers.redhat.com/developer-sandbox), a 30 days no cost shared cluster on [OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift).
 After few simple configuration steps the extension allows you to push an image to Sandbox internal image registry, so you can create and start containers from that image in OpenShift cluster using Podman Desktop UI.
 
 # Usage
@@ -32,7 +32,7 @@ in `Image Name` field. Select `Intel and AMD x86_64` in platform section and pre
 
 ![5-build-image](https://raw.githubusercontent.com/containers/podman-desktop-media/developer-sandbox/0.0.6/readme/327929234-7ab6e96a-a5a4-4dde-991f-f9f372200e60.png)
 
-After build is done pres `Done` button to swithch to `Images` page.
+After build is done press `Done` button to switch to `Images` page.
 
 ![6-build-image-result](https://raw.githubusercontent.com/containers/podman-desktop-media/developer-sandbox/0.0.6/readme/327929237-40754e69-7f90-460d-92fb-dc4dcd1cea11.png)
 
@@ -41,7 +41,7 @@ Sandbox internal registry name and then push tagged image to the registry.
 
 ![7-push-image-to-sandbox](https://raw.githubusercontent.com/containers/podman-desktop-media/developer-sandbox/0.0.6/readme/327929266-c2e2ada8-ca38-488d-b86e-1c1778a27d62.png)
 
-After successfuly pushing the image to internal Sandbox image registry an information message with explanation should apperar.
+After successfully pushing the image to internal Sandbox image registry an information message with explanation should appear.
 
 ![8-push-image-to-sandbox-message](https://raw.githubusercontent.com/containers/podman-desktop-media/developer-sandbox/0.0.6/readme/403705946-7d94f04b-9e6b-4f5f-aa0c-60793c3b0b56.png)
 
