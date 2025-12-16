@@ -19,7 +19,7 @@ After that, you should see a new sandbox connection in Running state in the Sand
 
 To deploy your first application on OpenShift. Create `Containerfile` shown below
 
-```
+```dockerfile
 FROM --platform=linux/amd64 registry.access.redhat.com/ubi8/httpd-24:latest
 
 LABEL org.opencontainers.image.title="Simple application with static content" \
@@ -53,7 +53,7 @@ In `Create Container` leave all default values and press `Start Container` butto
 
 ![10-container-successfully-started](https://raw.githubusercontent.com/containers/podman-desktop-media/developer-sandbox/0.0.6/readme/327929345-2f85abd9-442e-477a-8c6f-641240c39526.png)
 
-After container sucessfully started it can be deployed to kubernetes.
+After container successfully started it can be deployed to kubernetes.
 
 ![11-run-built-image-form](https://raw.githubusercontent.com/containers/podman-desktop-media/developer-sandbox/0.0.6/readme/327929349-b9b41027-3da4-45be-b77a-94f94c07a9a9.png)
 
