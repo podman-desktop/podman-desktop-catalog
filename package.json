@@ -30,7 +30,7 @@
     "@sveltejs/vite-plugin-svelte": "6.2.1",
     "@tailwindcss/vite": "^4.1.18",
     "@testing-library/jest-dom": "^6.9.1",
-    "@testing-library/svelte": "^5.2.10",
+    "@testing-library/svelte": "^5.3.0",
     "@tsconfig/svelte": "^5.0.6",
     "@typescript-eslint/eslint-plugin": "^8.50.1",
     "@typescript-eslint/parser": "^8.50.1",
