@@ -48,8 +48,8 @@ importers:
         specifier: ^6.9.1
         version: 6.9.1
       '@testing-library/svelte':
-        specifier: ^5.3.0
-        version: 5.3.0(svelte@5.46.1)(vite@7.3.0(jiti@2.6.1)(lightningcss@1.30.2))(vitest@3.2.3(@types/debug@4.1.12)(jiti@2.6.1)(jsdom@27.3.0(postcss@8.5.6))(lightningcss@1.30.2))
+        specifier: ^5.3.1
+        version: 5.3.1(svelte@5.46.1)(vite@7.3.0(jiti@2.6.1)(lightningcss@1.30.2))(vitest@3.2.3(@types/debug@4.1.12)(jiti@2.6.1)(jsdom@27.3.0(postcss@8.5.6))(lightningcss@1.30.2))
       '@tsconfig/svelte':
         specifier: ^5.0.6
         version: 5.0.6
@@ -880,8 +880,8 @@ packages:
     peerDependencies:
       svelte: ^3 || ^4 || ^5 || ^5.0.0-next.0
 
-  '@testing-library/svelte@5.3.0':
-    resolution: {integrity: sha512-N1b+OAZNF34iMmtTbj5TyE0Ff+NJ/Mp6E483qOIeyzRUKOTcj2N5jEEl56RJeNq5jeQ4kZp/oMA0hCybXydrtQ==}
+  '@testing-library/svelte@5.3.1':
+    resolution: {integrity: sha512-8Ez7ZOqW5geRf9PF5rkuopODe5RGy3I9XR+kc7zHh26gBiktLaxTfKmhlGaSHYUOTQE7wFsLMN9xCJVCszw47w==}
     engines: {node: '>= 10'}
     peerDependencies:
       svelte: ^3 || ^4 || ^5 || ^5.0.0-next.0
@@ -3807,7 +3807,7 @@ snapshots:
     dependencies:
       svelte: 5.46.1
 
-  '@testing-library/svelte@5.3.0(svelte@5.46.1)(vite@7.3.0(jiti@2.6.1)(lightningcss@1.30.2))(vitest@3.2.3(@types/debug@4.1.12)(jiti@2.6.1)(jsdom@27.3.0(postcss@8.5.6))(lightningcss@1.30.2))':
+  '@testing-library/svelte@5.3.1(svelte@5.46.1)(vite@7.3.0(jiti@2.6.1)(lightningcss@1.30.2))(vitest@3.2.3(@types/debug@4.1.12)(jiti@2.6.1)(jsdom@27.3.0(postcss@8.5.6))(lightningcss@1.30.2))':
     dependencies:
       '@testing-library/dom': 10.4.1
       '@testing-library/svelte-core': 1.0.0(svelte@5.46.1)
