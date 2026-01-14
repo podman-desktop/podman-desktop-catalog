@@ -2007,7 +2007,7 @@
           "podmanDesktopVersion": "^1.19.0",
           "preview": false,
           "lastUpdated": "2026-01-13T08:00:00Z",
-          "ociUri": "ghcr.io/podman-desktop/podman-desktop-github-ext:0.1.1.",
+          "ociUri": "ghcr.io/podman-desktop/podman-desktop-github-ext:0.1.1",
           "files": [
             {
               "assetType": "icon",
