@@ -10,16 +10,19 @@ The `macadam` binary is embedded in the extension, nothing needs to be installed
 
 ### On Mac/arm64
 
-When initialized, the extension checks if the necessary binaries are present in `/opt/macadam/bin`. If they are not, the extension installs them in this directory.
+When initialized, the extension checks if the necessary binaries are present in `/opt/macadam/bin`. Several scenarios can happen:
+- the binary is present and its version is the one expected by the extension (or a later version): the monitoring of VMs starts, and if VMs exist, they are listed in the Settings > RHEL VMs.
+- no binary is present: the monitoring of the VMs is not started, and even if VMs exist, they are not listed in Settings > RHEL VMs. The binary will be installed the first time the user creates a new VM, and the monitoring of VMs will be started at this moment,
+- the binary is present and its version is a prior version than the one expected by the extension: the monitoring is started with the found binary, and if VMs exist, they are listed in Settings > RHEL VMs. The first time the user makes an action on a VM (start, stop, delete, create), the correct binary is installed.
 
-> If this installation fails, you can run the installer manually, using the installer found at https://github.com/crc-org/macadam/releases/tag/v0.2.0. After this, you need to restart the extension which should find and use the binaries.
+> If this installation fails, you can run the installer manually, using the installer found at https://github.com/crc-org/macadam/releases/tag/v0.3.0. After this, you need to restart the extension which should find and use the binaries.
 
 ### On Fedora Linux/x86_64
 
-The `macadam` binary must be installed in the directory `/usr/local/bin/`: download the binary from https://github.com/crc-org/macadam/releases/tag/v0.2.0, rename it `macadam` and make it executable.
+The `macadam` binary must be installed in the directory `/usr/local/bin/`: download the binary from https://github.com/crc-org/macadam/releases/tag/v0.3.0, rename it `macadam` and make it executable.
 
 ```
-curl -L -o macadam https://github.com/crc-org/macadam/releases/download/v0.2.0/macadam-linux-amd64
+curl -L -o macadam https://github.com/crc-org/macadam/releases/download/v0.3.0/macadam-linux-amd64
 chmod 755 macadam
 sudo mkdir -p /usr/local/bin/
 sudo mv macadam /usr/local/bin/
@@ -27,6 +30,7 @@ sudo mv macadam /usr/local/bin/
 
 The `gvproxy` binary must be installed with the command `dnf install gvisor-tap-vsock`.
 
+> macadam needs gvproxy >= 0.8.3 to work. On recent versions of Fedora, the version installed by the `gvisor-tap-vsock` package is correct. You may need to install it differently in older Fedora releases.
 
 ## Install the extension
 
