@@ -589,6 +589,27 @@
       "keywords": ["bootc", "bootable", "OS", "disk"],
       "versions": [
         {
+          "version": "1.12.2",
+          "podmanDesktopVersion": "^1.25.0",
+          "preview": false,
+          "lastUpdated": "2026-01-20T00:00:00Z",
+          "ociUri": "ghcr.io/podman-desktop/extension-bootc:1.12.2",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/bootc/1.12.2/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/bootc/1.12.2/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/bootc/1.12.2/LICENSE"
+            }
+          ]
+        },
+        {
           "version": "1.11.0",
           "podmanDesktopVersion": "^1.18.0",
           "preview": false,
