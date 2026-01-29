@@ -1,0 +1,55 @@
+name: Check Icon Sizes
+
+on:
+  push:
+    branches:
+      - gh-pages
+    paths:
+      - 'api/extensions/**/icon.png'
+  pull_request:
+    branches:
+      - gh-pages
+    paths:
+      - 'api/extensions/**/icon.png'
+
+jobs:
+  check-icons:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install ImageMagick
+        run: sudo apt-get update && sudo apt-get install -y imagemagick
+
+      - name: Check icon dimensions
+        run: |
+          FAILED=0
+          EXPECTED_WIDTH=40
+          EXPECTED_HEIGHT=40
+
+          echo "Checking all icon.png files in api/extensions/..."
+          echo ""
+
+          while IFS= read -r -d '' icon; do
+            # Get dimensions using ImageMagick's identify
+            dimensions=$(identify -format "%wx%h" "$icon" 2>/dev/null)
+            width=$(echo "$dimensions" | cut -d'x' -f1)
+            height=$(echo "$dimensions" | cut -d'x' -f2)
+
+            if [ "$width" = "$EXPECTED_WIDTH" ] && [ "$height" = "$EXPECTED_HEIGHT" ]; then
+              echo "✓ $icon (${width}x${height})"
+            else
+              echo "✗ $icon (${dimensions:-unknown}, expected ${EXPECTED_WIDTH}x${EXPECTED_HEIGHT})"
+              FAILED=1
+            fi
+          done < <(find api/extensions -name "icon.png" -print0)
+
+          echo ""
+          if [ $FAILED -eq 1 ]; then
+            echo "ERROR: Some icons do not have the required ${EXPECTED_WIDTH}x${EXPECTED_HEIGHT} dimensions."
+            echo "Please resize the icons to ${EXPECTED_WIDTH}x${EXPECTED_HEIGHT} pixels."
+            exit 1
+          else
+            echo "All icons have the correct ${EXPECTED_WIDTH}x${EXPECTED_HEIGHT} dimensions."
+          fi
