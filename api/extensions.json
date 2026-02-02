@@ -1957,6 +1957,26 @@
       "keywords": ["rhel", "vm"],
       "versions": [
         {
+          "version": "0.10.0",
+          "preview": false,
+          "lastUpdated": "2026-01-30T12:00:00Z",
+          "ociUri": "ghcr.io/redhat-developer/podman-desktop-rhel-ext:0.10.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-vms/0.10.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-vms/0.10.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/rhel-vms/0.10.0/LICENSE"
+            }
+          ]
+        },
+        {
           "version": "0.9.0",
           "preview": false,
           "lastUpdated": "2026-01-16T12:00:00Z",
