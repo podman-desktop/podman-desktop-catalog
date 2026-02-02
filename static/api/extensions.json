@@ -2071,6 +2071,27 @@
       "keywords": ["database", "connection", "discover"],
       "versions": [
         {
+          "version": "0.5.0",
+          "podmanDesktopVersion": "^1.16.0",
+          "preview": false,
+          "lastUpdated": "2026-01-28T08:00:00Z",
+          "ociUri": "ghcr.io/podman-desktop/extension-postgresql:0.5.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/postgresql/0.5.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/postgresql/0.5.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/postgresql/0.5.0/LICENSE"
+            }
+          ]
+        },
+        {
           "version": "0.4.0",
           "podmanDesktopVersion": "^1.16.0",
           "preview": false,
