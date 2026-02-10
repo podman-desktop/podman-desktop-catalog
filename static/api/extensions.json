@@ -2217,6 +2217,41 @@
           ]
         }
       ]
+    },
+    {
+      "publisher": {
+        "publisherName": "podman-desktop",
+        "displayName": "Kubernetes Dashboard"
+      },
+      "extensionName": "kubernetes-dashboard",
+      "displayName": "Kubernetes Dashboard",
+      "shortDescription": "Monitor resources from Kubernetes clusters",
+      "license": "Apache-2.0",
+      "categories": ["Kubernetes"],
+      "keywords": ["kubernetes", "manager"],
+      "versions": [
+        {
+          "version": "0.5.0",
+          "podmanDesktopVersion": "^1.26.0",
+          "preview": false,
+          "lastUpdated": "2026-02-10T08:00:00Z",
+          "ociUri": "ghcr.io/podman-desktop/podman-desktop-extension-kubernetes-dashboard:0.5.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/kubernetes-dashboard/0.5.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/kubernetes-dashboard/0.5.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/kubernetes-dashboard/0.5.0/LICENSE"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
