@@ -2221,7 +2221,7 @@
     {
       "publisher": {
         "publisherName": "podman-desktop",
-        "displayName": "Kubernetes Dashboard"
+        "displayName": "Podman Desktop"
       },
       "extensionName": "kubernetes-dashboard",
       "displayName": "Kubernetes Dashboard",
