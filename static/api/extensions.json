@@ -2006,7 +2006,7 @@
           "version": "0.2.0",
           "podmanDesktopVersion": "^1.19.0",
           "preview": false,
-          "lastUpdated": "2026-01-13T08:00:00Z",
+          "lastUpdated": "2026-02-09T08:00:00Z",
           "ociUri": "ghcr.io/podman-desktop/podman-desktop-github-ext:0.2.0",
           "files": [
             {
