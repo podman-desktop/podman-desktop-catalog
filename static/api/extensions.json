@@ -2217,6 +2217,41 @@
           ]
         }
       ]
+    },
+    {
+      "publisher": {
+        "publisherName": "podman-desktop",
+        "displayName": "Podman Desktop"
+      },
+      "extensionName": "github-account",
+      "displayName": "GitHub Account Authentication",
+      "shortDescription": "Sign in and authenticate with a GitHub account",
+      "license": "Apache-2.0",
+      "categories": ["Authentication"],
+      "keywords": ["github", "authentication", "login"],
+      "versions": [
+        {
+          "version": "0.2.0",
+          "podmanDesktopVersion": "^1.19.0",
+          "preview": false,
+          "lastUpdated": "2026-02-09T08:00:00Z",
+          "ociUri": "ghcr.io/podman-desktop/podman-desktop-github-ext:0.2.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/github-authentication/0.2.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/github-authentication/0.2.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/github-authentication/0.2.0/LICENSE"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
