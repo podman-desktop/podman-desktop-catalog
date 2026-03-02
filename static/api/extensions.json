@@ -2217,6 +2217,41 @@
           ]
         }
       ]
+    },
+    {
+      "publisher": {
+        "publisherName": "dhenry",
+        "displayName": "David Henry"
+      },
+      "extensionName": "extension-stats",
+      "displayName": "Container Stats",
+      "shortDescription": "Real-time container and host resource monitoring dashboard",
+      "license": "Apache-2.0",
+      "categories": ["Monitoring"],
+      "keywords": ["stats", "monitoring", "containers", "cpu", "memory"],
+      "versions": [
+        {
+          "version": "1.0.1",
+          "podmanDesktopVersion": ">=1.0.0",
+          "preview": false,
+          "lastUpdated": "2026-02-24T00:00:00Z",
+          "ociUri": "ghcr.io/djhenry/extension-stats:1.0.1",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/dhenry/extension-stats/1.0.1/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/dhenry/extension-stats/1.0.1/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/dhenry/extension-stats/1.0.1/LICENSE"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
