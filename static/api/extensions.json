@@ -2217,6 +2217,41 @@
           ]
         }
       ]
+    },
+    {
+      "publisher": {
+        "publisherName": "podman-desktop",
+        "displayName": "Podman Desktop"
+      },
+      "extensionName": "kubernetes-pack",
+      "displayName": "Kubernetes Extension Pack",
+      "shortDescription": "Recommended Kubernetes extensions for Podman Desktop",
+      "license": "Apache-2.0",
+      "categories": ["Extension Packs", "Kubernetes"],
+      "keywords": ["kubernetes", "pack"],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "podmanDesktopVersion": "^1.26.0",
+          "preview": false,
+          "lastUpdated": "2026-03-05T08:00:00Z",
+          "ociUri": "ghcr.io/podman-desktop/extension-pack-kubernetes:0.1.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/extension-pack-kubernetes/0.1.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/extension-pack-kubernetes/0.1.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/extension-pack-kubernetes/0.1.0/LICENSE"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
