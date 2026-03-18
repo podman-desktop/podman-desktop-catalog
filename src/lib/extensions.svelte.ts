@@ -57,7 +57,7 @@ export async function initCatalog(): Promise<void> {
   try {
     data = await response.json();
   } catch (error: unknown) {
-    throw new Error(`Failed to parse JSON from ${REGISTRY_URL}: ${String(error)}`);
+    throw new Error(`Failed to parse JSON from ${REGISTRY_URL}: ${String(error)}`, { cause: error });
   }
   const extensions: CatalogExtensionInfo[] = [];
   if (typeof data === 'object' && data && 'extensions' in data) {
