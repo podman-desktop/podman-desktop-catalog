@@ -68,6 +68,7 @@
   "pnpm": {
     "overrides": {
       "@sveltejs/kit>cookie": "^0.7.0",
+      "flatted@^3": "^3.4.2",
       "minimatch@^3": "^3.1.5",
       "minimatch@^9": "^9.0.9",
       "minimatch@^10": "^10.2.4"
