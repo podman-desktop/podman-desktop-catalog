@@ -42,7 +42,7 @@ Disclaimer: This is **EXPERIMENTAL** and all features are subject to change as w
 ### Requirement 1. System requirements
 
 * macOS M1/M2/M3 Silicon Architecture ONLY (Windows & Linux support coming soon)
-* [podman 4.9.0+](https://github.com/containers/podman/releases/tag/v4.9.0)
+* [podman 4.9.0+](https://github.com/podman-container-tools/podman/releases/tag/v4.9.0)
 * [vfkit 0.5.1+](https://github.com/crc-org/vfkit) for "one-click" VM launch button support
 
 ### Requirement 2. Rootful mode on Podman Machine
