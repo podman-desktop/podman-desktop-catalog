@@ -85,7 +85,7 @@ Note: Windows & Linux not supported, but coming soon
 
 **Software:**
 * [Podman Desktop 1.7.0+](https://github.com/containers/podman-desktop)
-* [Podman 4.9.0+](https://github.com/containers/podman) (should be automatically installed by Podman Desktop already)
+* [Podman 4.9.0+](https://github.com/podman-container-tools/podman) (should be automatically installed by Podman Desktop already)
 
 ### Requirement 2. Rootful mode on Podman Machine
 
