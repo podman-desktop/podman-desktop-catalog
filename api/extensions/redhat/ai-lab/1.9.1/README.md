@@ -50,7 +50,7 @@ Compatible on Windows, macOS & Linux
 **Software:**
 
 - [Podman Desktop 1.9.1+](https://github.com/containers/podman-desktop)
-- [Podman 4.9.0+](https://github.com/containers/podman)
+- [Podman 4.9.0+](https://github.com/podman-container-tools/podman)
 
 **Hardware**
 
