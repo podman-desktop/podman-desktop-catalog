@@ -41,25 +41,25 @@ importers:
         version: 1.28.2(svelte-fa@4.0.4(svelte@5.56.4(@typescript-eslint/types@8.62.1)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))
       '@sveltejs/adapter-auto':
         specifier: ^7.0.1
-        version: 7.0.1(@sveltejs/kit@2.68.0(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))(typescript@5.9.3)(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)))
+        version: 7.0.1(@sveltejs/kit@2.68.0(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))(typescript@5.9.3)(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)))
       '@sveltejs/adapter-static':
         specifier: ^3.0.10
-        version: 3.0.10(@sveltejs/kit@2.68.0(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))(typescript@5.9.3)(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)))
+        version: 3.0.10(@sveltejs/kit@2.68.0(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))(typescript@5.9.3)(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)))
       '@sveltejs/kit':
         specifier: ^2.68.0
-        version: 2.68.0(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))(typescript@5.9.3)(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0))
+        version: 2.68.0(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))(typescript@5.9.3)(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0))
       '@sveltejs/vite-plugin-svelte':
         specifier: 7.1.2
-        version: 7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0))
+        version: 7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0))
       '@tailwindcss/vite':
         specifier: ^4.3.2
-        version: 4.3.2(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0))
+        version: 4.3.2(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0))
       '@testing-library/jest-dom':
         specifier: ^6.9.1
         version: 6.9.1
       '@testing-library/svelte':
         specifier: ^5.4.2
-        version: 5.4.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0))(vitest@4.1.0(jsdom@29.1.1)(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)))
+        version: 5.4.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0))(vitest@4.1.0(jsdom@29.1.1)(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)))
       '@tsconfig/svelte':
         specifier: ^5.0.8
         version: 5.0.8
@@ -71,10 +71,10 @@ importers:
         version: 8.62.1(eslint@10.6.0(jiti@2.7.0))(typescript@5.9.3)
       '@vitest/coverage-v8':
         specifier: 4.1.0
-        version: 4.1.0(vitest@4.1.0(jsdom@29.1.1)(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)))
+        version: 4.1.0(vitest@4.1.0(jsdom@29.1.1)(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)))
       '@vitest/eslint-plugin':
         specifier: ^1.6.20
-        version: 1.6.20(@typescript-eslint/eslint-plugin@8.62.1(@typescript-eslint/parser@8.62.1(eslint@10.6.0(jiti@2.7.0))(typescript@5.9.3))(eslint@10.6.0(jiti@2.7.0))(typescript@5.9.3))(eslint@10.6.0(jiti@2.7.0))(typescript@5.9.3)(vitest@4.1.0(jsdom@29.1.1)(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)))
+        version: 1.6.20(@typescript-eslint/eslint-plugin@8.62.1(@typescript-eslint/parser@8.62.1(eslint@10.6.0(jiti@2.7.0))(typescript@5.9.3))(eslint@10.6.0(jiti@2.7.0))(typescript@5.9.3))(eslint@10.6.0(jiti@2.7.0))(typescript@5.9.3)(vitest@4.1.0(jsdom@29.1.1)(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)))
       eslint:
         specifier: ^10.6.0
         version: 10.6.0(jiti@2.7.0)
@@ -151,11 +151,11 @@ importers:
         specifier: ^8.62.1
         version: 8.62.1(eslint@10.6.0(jiti@2.7.0))(typescript@5.9.3)
       vite:
-        specifier: ^8.1.0
-        version: 8.1.0(jiti@2.7.0)(yaml@2.9.0)
+        specifier: ^8.1.2
+        version: 8.1.2(jiti@2.7.0)(yaml@2.9.0)
       vitest:
         specifier: ^4.1.0
-        version: 4.1.0(jsdom@29.1.1)(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0))
+        version: 4.1.0(jsdom@29.1.1)(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0))
 
 packages:
 
@@ -2851,8 +2851,8 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
-  vite@8.1.0:
-    resolution: {integrity: sha512-BuJcQK/56NQTWDGn4ABea3q4SSBdNPWwNZKTkkUpcMPnLoquSYH8llRtSUIgoL1KSCpHt5eghLShn50mH36y7Q==}
+  vite@8.1.2:
+    resolution: {integrity: sha512-6YYPbRXTxx6bRXmOn7XdnQAy5DQNHhDgtjhDHI13oe4pY93kkcdGJWxpGwOm++/Wh0QpQhDrpIoVMrmrsI5AGQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -3388,19 +3388,19 @@ snapshots:
     dependencies:
       acorn: 8.17.0
 
-  '@sveltejs/adapter-auto@7.0.1(@sveltejs/kit@2.68.0(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))(typescript@5.9.3)(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)))':
+  '@sveltejs/adapter-auto@7.0.1(@sveltejs/kit@2.68.0(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))(typescript@5.9.3)(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)))':
     dependencies:
-      '@sveltejs/kit': 2.68.0(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))(typescript@5.9.3)(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0))
+      '@sveltejs/kit': 2.68.0(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))(typescript@5.9.3)(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0))
 
-  '@sveltejs/adapter-static@3.0.10(@sveltejs/kit@2.68.0(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))(typescript@5.9.3)(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)))':
+  '@sveltejs/adapter-static@3.0.10(@sveltejs/kit@2.68.0(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))(typescript@5.9.3)(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)))':
     dependencies:
-      '@sveltejs/kit': 2.68.0(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))(typescript@5.9.3)(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0))
+      '@sveltejs/kit': 2.68.0(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))(typescript@5.9.3)(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0))
 
-  '@sveltejs/kit@2.68.0(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))(typescript@5.9.3)(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0))':
+  '@sveltejs/kit@2.68.0(@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)))(svelte@5.56.4(@typescript-eslint/types@8.62.1))(typescript@5.9.3)(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0))':
     dependencies:
       '@standard-schema/spec': 1.1.0
       '@sveltejs/acorn-typescript': 1.0.10(acorn@8.17.0)
-      '@sveltejs/vite-plugin-svelte': 7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0))
+      '@sveltejs/vite-plugin-svelte': 7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0))
       '@types/cookie': 0.6.0
       acorn: 8.17.0
       cookie: 0.7.2
@@ -3412,20 +3412,20 @@ snapshots:
       set-cookie-parser: 3.1.1
       sirv: 3.0.2
       svelte: 5.56.4(@typescript-eslint/types@8.62.1)
-      vite: 8.1.0(jiti@2.7.0)(yaml@2.9.0)
+      vite: 8.1.2(jiti@2.7.0)(yaml@2.9.0)
     optionalDependencies:
       typescript: 5.9.3
 
   '@sveltejs/load-config@0.2.0': {}
 
-  '@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0))':
+  '@sveltejs/vite-plugin-svelte@7.1.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0))':
     dependencies:
       deepmerge: 4.3.1
       magic-string: 0.30.21
       obug: 2.1.1
       svelte: 5.56.4(@typescript-eslint/types@8.62.1)
-      vite: 8.1.0(jiti@2.7.0)(yaml@2.9.0)
-      vitefu: 1.1.3(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0))
+      vite: 8.1.2(jiti@2.7.0)(yaml@2.9.0)
+      vitefu: 1.1.3(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0))
 
   '@tailwindcss/node@4.3.2':
     dependencies:
@@ -3488,12 +3488,12 @@ snapshots:
       '@tailwindcss/oxide-win32-arm64-msvc': 4.3.2
       '@tailwindcss/oxide-win32-x64-msvc': 4.3.2
 
-  '@tailwindcss/vite@4.3.2(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0))':
+  '@tailwindcss/vite@4.3.2(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0))':
     dependencies:
       '@tailwindcss/node': 4.3.2
       '@tailwindcss/oxide': 4.3.2
       tailwindcss: 4.3.2
-      vite: 8.1.0(jiti@2.7.0)(yaml@2.9.0)
+      vite: 8.1.2(jiti@2.7.0)(yaml@2.9.0)
 
   '@testing-library/dom@10.4.1':
     dependencies:
@@ -3519,14 +3519,14 @@ snapshots:
     dependencies:
       svelte: 5.56.4(@typescript-eslint/types@8.62.1)
 
-  '@testing-library/svelte@5.4.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0))(vitest@4.1.0(jsdom@29.1.1)(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)))':
+  '@testing-library/svelte@5.4.2(svelte@5.56.4(@typescript-eslint/types@8.62.1))(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0))(vitest@4.1.0(jsdom@29.1.1)(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)))':
     dependencies:
       '@testing-library/dom': 10.4.1
       '@testing-library/svelte-core': 1.1.3(svelte@5.56.4(@typescript-eslint/types@8.62.1))
       svelte: 5.56.4(@typescript-eslint/types@8.62.1)
     optionalDependencies:
-      vite: 8.1.0(jiti@2.7.0)(yaml@2.9.0)
-      vitest: 4.1.0(jsdom@29.1.1)(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0))
+      vite: 8.1.2(jiti@2.7.0)(yaml@2.9.0)
+      vitest: 4.1.0(jsdom@29.1.1)(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0))
 
   '@tsconfig/svelte@5.0.8': {}
 
@@ -3878,7 +3878,7 @@ snapshots:
   '@unrs/resolver-binding-win32-x64-msvc@1.12.2':
     optional: true
 
-  '@vitest/coverage-v8@4.1.0(vitest@4.1.0(jsdom@29.1.1)(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)))':
+  '@vitest/coverage-v8@4.1.0(vitest@4.1.0(jsdom@29.1.1)(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)))':
     dependencies:
       '@bcoe/v8-coverage': 1.0.2
       '@vitest/utils': 4.1.0
@@ -3890,9 +3890,9 @@ snapshots:
       obug: 2.1.1
       std-env: 4.0.0
       tinyrainbow: 3.1.0
-      vitest: 4.1.0(jsdom@29.1.1)(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0))
+      vitest: 4.1.0(jsdom@29.1.1)(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0))
 
-  '@vitest/eslint-plugin@1.6.20(@typescript-eslint/eslint-plugin@8.62.1(@typescript-eslint/parser@8.62.1(eslint@10.6.0(jiti@2.7.0))(typescript@5.9.3))(eslint@10.6.0(jiti@2.7.0))(typescript@5.9.3))(eslint@10.6.0(jiti@2.7.0))(typescript@5.9.3)(vitest@4.1.0(jsdom@29.1.1)(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)))':
+  '@vitest/eslint-plugin@1.6.20(@typescript-eslint/eslint-plugin@8.62.1(@typescript-eslint/parser@8.62.1(eslint@10.6.0(jiti@2.7.0))(typescript@5.9.3))(eslint@10.6.0(jiti@2.7.0))(typescript@5.9.3))(eslint@10.6.0(jiti@2.7.0))(typescript@5.9.3)(vitest@4.1.0(jsdom@29.1.1)(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)))':
     dependencies:
       '@typescript-eslint/scope-manager': 8.61.0
       '@typescript-eslint/utils': 8.61.0(eslint@10.6.0(jiti@2.7.0))(typescript@5.9.3)
@@ -3900,7 +3900,7 @@ snapshots:
     optionalDependencies:
       '@typescript-eslint/eslint-plugin': 8.62.1(@typescript-eslint/parser@8.62.1(eslint@10.6.0(jiti@2.7.0))(typescript@5.9.3))(eslint@10.6.0(jiti@2.7.0))(typescript@5.9.3)
       typescript: 5.9.3
-      vitest: 4.1.0(jsdom@29.1.1)(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0))
+      vitest: 4.1.0(jsdom@29.1.1)(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0))
     transitivePeerDependencies:
       - supports-color
 
@@ -3913,13 +3913,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.1.0
 
-  '@vitest/mocker@4.1.0(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0))':
+  '@vitest/mocker@4.1.0(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0))':
     dependencies:
       '@vitest/spy': 4.1.0
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 8.1.0(jiti@2.7.0)(yaml@2.9.0)
+      vite: 8.1.2(jiti@2.7.0)(yaml@2.9.0)
 
   '@vitest/pretty-format@4.1.0':
     dependencies:
@@ -5909,7 +5909,7 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
-  vite@8.1.0(jiti@2.7.0)(yaml@2.9.0):
+  vite@8.1.2(jiti@2.7.0)(yaml@2.9.0):
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.4
@@ -5921,14 +5921,14 @@ snapshots:
       jiti: 2.7.0
       yaml: 2.9.0
 
-  vitefu@1.1.3(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)):
+  vitefu@1.1.3(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)):
     optionalDependencies:
-      vite: 8.1.0(jiti@2.7.0)(yaml@2.9.0)
+      vite: 8.1.2(jiti@2.7.0)(yaml@2.9.0)
 
-  vitest@4.1.0(jsdom@29.1.1)(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0)):
+  vitest@4.1.0(jsdom@29.1.1)(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0)):
     dependencies:
       '@vitest/expect': 4.1.0
-      '@vitest/mocker': 4.1.0(vite@8.1.0(jiti@2.7.0)(yaml@2.9.0))
+      '@vitest/mocker': 4.1.0(vite@8.1.2(jiti@2.7.0)(yaml@2.9.0))
       '@vitest/pretty-format': 4.1.0
       '@vitest/runner': 4.1.0
       '@vitest/snapshot': 4.1.0
@@ -5945,7 +5945,7 @@ snapshots:
       tinyexec: 1.0.4
       tinyglobby: 0.2.15
       tinyrainbow: 3.1.0
-      vite: 8.1.0(jiti@2.7.0)(yaml@2.9.0)
+      vite: 8.1.2(jiti@2.7.0)(yaml@2.9.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
       jsdom: 29.1.1
