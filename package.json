@@ -49,7 +49,7 @@
     "eslint-plugin-sonarjs": "^4.2.0",
     "eslint-plugin-svelte": "^3.22.0",
     "eslint-plugin-unicorn": "^72.0.0",
-    "globals": "^17.7.0",
+    "globals": "^17.8.0",
     "jsdom": "^29.1.1",
     "micromark": "^4.0.2",
     "micromark-extension-directive": "^4.0.0",
