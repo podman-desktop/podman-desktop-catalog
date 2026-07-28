@@ -2545,6 +2545,26 @@
               "data": "https://registry.podman-desktop.io/api/extensions/redhat/hummingbird/0.1.1/LICENSE"
             }
           ]
+        },
+        {
+          "version": "0.2.0",
+          "preview": false,
+          "lastUpdated": "2026-07-28T00:00:00Z",
+          "ociUri": "ghcr.io/redhat-developer/podman-desktop-hummingbird-ext:0.2.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/hummingbird/0.2.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/hummingbird/0.2.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/hummingbird/0.2.0/LICENSE"
+            }
+          ]
         }
       ]
     }
