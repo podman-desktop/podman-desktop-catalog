@@ -2549,6 +2549,7 @@
         {
           "version": "0.2.0",
           "preview": false,
+          "podmanDesktopVersion": "^1.29.0",
           "lastUpdated": "2026-07-28T00:00:00Z",
           "ociUri": "ghcr.io/redhat-developer/podman-desktop-hummingbird-ext:0.2.0",
           "files": [
