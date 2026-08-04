@@ -37,8 +37,8 @@ importers:
         specifier: ^7.3.1
         version: 7.3.1
       '@podman-desktop/ui-svelte':
-        specifier: 1.29.0
-        version: 1.29.0(svelte-fa@4.0.4(svelte@5.56.8(@typescript-eslint/types@8.65.0)))(svelte@5.56.8(@typescript-eslint/types@8.65.0))
+        specifier: 1.29.1
+        version: 1.29.1(svelte-fa@4.0.4(svelte@5.56.8(@typescript-eslint/types@8.65.0)))(svelte@5.56.8(@typescript-eslint/types@8.65.0))
       '@sveltejs/adapter-auto':
         specifier: ^7.0.1
         version: 7.0.1(@sveltejs/kit@2.70.2(@sveltejs/vite-plugin-svelte@7.2.0(svelte@5.56.8(@typescript-eslint/types@8.65.0))(vite@8.2.0(jiti@2.7.0)(yaml@2.9.0)))(svelte@5.56.8(@typescript-eslint/types@8.65.0))(typescript@5.9.3)(vite@8.2.0(jiti@2.7.0)(yaml@2.9.0)))
@@ -486,8 +486,8 @@ packages:
     peerDependencies:
       typescript: ^3 || ^4 || ^5
 
-  '@podman-desktop/ui-svelte@1.29.0':
-    resolution: {integrity: sha512-jdBTk5qK/Txl3+lO9IbbzkxFo6VzXJ8zpcxL9Y3HRjnoyelaFMckAiFyivijHBhXeT1bpRQNCzGHGGFbogznQg==}
+  '@podman-desktop/ui-svelte@1.29.1':
+    resolution: {integrity: sha512-q7Uw1Jtw+mQuukFpV2F++Qh4FWviJCVLGgglSxeWSlhHXw58OTIOPTHiyLdxjP1flo3miUuYUAJwQ4LuIkQmKA==}
     peerDependencies:
       svelte: ^4.0.0 || ^5.0.0
       svelte-fa: ^4.0.0
@@ -3428,7 +3428,7 @@ snapshots:
       esquery: 1.7.0
       typescript: 5.9.3
 
-  '@podman-desktop/ui-svelte@1.29.0(svelte-fa@4.0.4(svelte@5.56.8(@typescript-eslint/types@8.65.0)))(svelte@5.56.8(@typescript-eslint/types@8.65.0))':
+  '@podman-desktop/ui-svelte@1.29.1(svelte-fa@4.0.4(svelte@5.56.8(@typescript-eslint/types@8.65.0)))(svelte@5.56.8(@typescript-eslint/types@8.65.0))':
     dependencies:
       '@floating-ui/dom': 1.8.0
       '@fortawesome/fontawesome-free': 7.3.1
