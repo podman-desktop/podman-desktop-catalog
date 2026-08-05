@@ -2513,23 +2513,23 @@
           ]
         },
         {
-          "version": "0.2.0",
+          "version": "0.2.1",
           "podmanDesktopVersion": "^1.26.0",
           "preview": false,
-          "lastUpdated": "2026-07-28T08:00:00Z",
-          "ociUri": "ghcr.io/podman-desktop/extension-grype:0.2.0",
+          "lastUpdated": "2026-08-05T08:00:00Z",
+          "ociUri": "ghcr.io/podman-desktop/extension-grype:0.2.1",
           "files": [
             {
               "assetType": "icon",
-              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/grype/0.2.0/icon.png"
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/grype/0.2.1/icon.png"
             },
             {
               "assetType": "README",
-              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/grype/0.2.0/README.md"
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/grype/0.2.1/README.md"
             },
             {
               "assetType": "LICENSE",
-              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/grype/0.2.0/LICENSE"
+              "data": "https://registry.podman-desktop.io/api/extensions/podman-desktop/grype/0.2.1/LICENSE"
             }
           ]
         }
