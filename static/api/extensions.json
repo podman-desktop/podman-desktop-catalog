@@ -401,6 +401,26 @@
       "keywords": ["OpenShift", "MicroShift", "provider", "local"],
       "versions": [
         {
+          "version": "2.4.0",
+          "preview": false,
+          "ociUri": "ghcr.io/crc-org/crc-extension:2.4.0",
+          "lastUpdated": "2026-07-23T00:00:00Z",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/openshift-local/2.4.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/openshift-local/2.4.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/redhat/openshift-local/2.4.0/LICENSE.txt"
+            }
+          ]
+        },
+        {
           "version": "2.3.0",
           "preview": false,
           "ociUri": "ghcr.io/crc-org/crc-extension:2.3.0",
