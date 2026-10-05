@@ -20,7 +20,7 @@ function getPerPageLimit(): number | undefined {
 
 // Sort extensions based upon the last updated date based upon what's in .versions array
 function getSortedExtensions(extensions: CatalogExtensionInfo[]): CatalogExtensionInfo[] {
-  return [...extensions].sort((a, b) => {
+  return extensions.toSorted((a, b) => {
     const aLastUpdated = a.versions?.[a.versions.length - 1]?.lastUpdated ?? 0;
     const bLastUpdated = b.versions?.[b.versions.length - 1]?.lastUpdated ?? 0;
     return Number(bLastUpdated) - Number(aLastUpdated);
