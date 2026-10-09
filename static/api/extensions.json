@@ -2710,6 +2710,41 @@
           ]
         }
       ]
+    },
+    {
+      "publisher": {
+        "publisherName": "gasparovicm",
+        "displayName": "gasparovicm"
+      },
+      "extensionName": "docker-tcp",
+      "displayName": "Docker over TCP",
+      "shortDescription": "Connect to Docker engines reachable via tcp:// (e.g. Docker in WSL)",
+      "license": "Apache-2.0",
+      "categories": ["Containers"],
+      "keywords": ["docker", "tcp", "wsl", "provider"],
+      "versions": [
+        {
+          "version": "0.1.0",
+          "podmanDesktopVersion": "^1.20.0",
+          "preview": false,
+          "lastUpdated": "2026-10-04T00:00:00Z",
+          "ociUri": "ghcr.io/gasparovicm/podman-desktop-docker-tcp:0.1.0",
+          "files": [
+            {
+              "assetType": "icon",
+              "data": "https://registry.podman-desktop.io/api/extensions/gasparovicm/docker-tcp/0.1.0/icon.png"
+            },
+            {
+              "assetType": "README",
+              "data": "https://registry.podman-desktop.io/api/extensions/gasparovicm/docker-tcp/0.1.0/README.md"
+            },
+            {
+              "assetType": "LICENSE",
+              "data": "https://registry.podman-desktop.io/api/extensions/gasparovicm/docker-tcp/0.1.0/LICENSE"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
