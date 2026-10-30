@@ -52,7 +52,7 @@
     "micromark": "^4.0.3",
     "micromark-extension-directive": "^4.0.0",
     "moment": "^2.31.0",
-    "svelte": "5.57.2",
+    "svelte": "5.57.3",
     "svelte-check": "^4.7.7",
     "svelte-eslint-parser": "^1.10.0",
     "tailwindcss": "^4.3.3",
