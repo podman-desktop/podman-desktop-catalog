@@ -6,7 +6,7 @@
   },
   "files": {
     "maxSize": 1600000,
-    "includes": ["**", "!**/coverage/**", "!**/dist/**", "!**/.svelte-kit/**"]
+    "includes": ["**", "!**/coverage/**", "!**/dist/**", "!**/.svelte-kit/**", "!static/api/**/*.md"]
   },
   "javascript": {
     "formatter": {
@@ -19,6 +19,11 @@
   "json": {
     "formatter": {
       "indentWidth": 2
+    }
+  },
+  "yaml": {
+    "formatter": {
+      "quoteStyle": "single"
     }
   },
   "css": {
