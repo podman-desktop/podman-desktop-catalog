@@ -1,8 +1,8 @@
 <script lang="ts">
 import moment from 'moment';
 
-import type { CatalogExtensionInfo, CatalogExtensionVersionInfo } from '$lib/api/extensions-info';
-import Markdown from '$lib/Markdown.svelte';
+import type { CatalogExtensionInfo, CatalogExtensionVersionInfo } from '#lib/api/extensions-info.js';
+import Markdown from '#lib/Markdown.svelte';
 
 const { extension }: { extension: CatalogExtensionInfo } = $props();
 

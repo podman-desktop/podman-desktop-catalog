@@ -1,5 +1,5 @@
 {
-  "extends": "./.svelte-kit/tsconfig.json",
+  "extends": "$app/tsconfig",
   "compilerOptions": {
     "strict": true,
     "allowUnusedLabels": false,
@@ -20,7 +20,7 @@
     "resolveJsonModule": true,
     "sourceMap": true,
     "preserveValueImports": false,
-    "types": ["@testing-library/jest-dom"]
+    "types": ["$app/types", "@testing-library/jest-dom"]
   },
   "include": ["src/app.d.ts", "src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"]
 }

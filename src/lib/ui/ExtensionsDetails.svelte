@@ -1,8 +1,8 @@
 <script lang="ts">
 import { CloseButton } from '@podman-desktop/ui-svelte';
 
-import type { CatalogExtensionInfo } from '$lib/api/extensions-info';
-import { setCurrentExtension } from '$lib/extensions.svelte';
+import type { CatalogExtensionInfo } from '#lib/api/extensions-info.js';
+import { setCurrentExtension } from '#lib/extensions.svelte.js';
 
 import ExtensionsDetailsBottom from './ExtensionsDetailsBottom.svelte';
 import ExtensionsDetailsTop from './ExtensionsDetailsTop.svelte';

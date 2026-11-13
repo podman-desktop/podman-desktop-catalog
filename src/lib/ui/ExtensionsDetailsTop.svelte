@@ -1,7 +1,7 @@
 <script lang="ts">
 import { Button } from '@podman-desktop/ui-svelte';
 
-import type { CatalogExtensionInfo } from '$lib/api/extensions-info';
+import type { CatalogExtensionInfo } from '#lib/api/extensions-info.js';
 
 import ExtensionIcon from './ExtensionIcon.svelte';
 

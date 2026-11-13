@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { CatalogExtensionInfo, ExtensionByCategoryInfo } from '$lib/api/extensions-info';
+import type { CatalogExtensionInfo, ExtensionByCategoryInfo } from '#lib/api/extensions-info.js';
 
 import ExtensionByCategoryCard from './ExtensionByCategoryCard.svelte';
 import ExtensionsByCategory from './ExtensionsByCategory.svelte';

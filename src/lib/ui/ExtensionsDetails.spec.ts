@@ -21,7 +21,7 @@ import '@testing-library/jest-dom/vitest';
 import { render, screen } from '@testing-library/svelte';
 import { beforeEach, expect, test, vi } from 'vitest';
 
-import type { CatalogExtensionInfo } from '$lib/api/extensions-info';
+import type { CatalogExtensionInfo } from '#lib/api/extensions-info.js';
 
 import ExtensionsDetails from './ExtensionsDetails.svelte';
 

@@ -1,9 +1,9 @@
 <script lang="ts">
 import { onMount } from 'svelte';
 
-import Appearance from '$lib/Appearance.svelte';
-import ExtensionsDetails from '$lib/ui/ExtensionsDetails.svelte';
-import ExtensionsList from '$lib/ui/ExtensionsList.svelte';
+import Appearance from '#lib/Appearance.svelte';
+import ExtensionsDetails from '#lib/ui/ExtensionsDetails.svelte';
+import ExtensionsList from '#lib/ui/ExtensionsList.svelte';
 
 import type { ExtensionByCategoryInfo } from '../lib/api/extensions-info';
 import { catalogExtensions, getCurrentExtension, initCatalog } from '../lib/extensions.svelte';

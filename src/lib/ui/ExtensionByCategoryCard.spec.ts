@@ -21,8 +21,8 @@ import '@testing-library/jest-dom/vitest';
 import { fireEvent, render, screen } from '@testing-library/svelte';
 import { beforeEach, expect, test, vi } from 'vitest';
 
-import type { CatalogExtensionInfo } from '$lib/api/extensions-info';
-import { getCurrentExtension } from '$lib/extensions.svelte';
+import type { CatalogExtensionInfo } from '#lib/api/extensions-info.js';
+import { getCurrentExtension } from '#lib/extensions.svelte.js';
 
 import ExtensionByCategoryCard from './ExtensionByCategoryCard.svelte';
 
