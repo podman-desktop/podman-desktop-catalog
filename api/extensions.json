@@ -2137,6 +2137,7 @@
       "license": "Apache-2.0",
       "categories": ["Containers"],
       "keywords": ["container", "apple", "macos"],
+      "targetPlatforms": ["darwin/arm64"],
       "versions": [
         {
           "version": "0.2.0",
