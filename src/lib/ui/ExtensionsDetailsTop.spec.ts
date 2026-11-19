@@ -44,6 +44,7 @@ test('check content', async () => {
     id: 'dummy1',
     displayName: 'My Display Name',
     shortDescription: 'My Description',
+    targetPlatforms: [],
     versions: [version],
   } as unknown as CatalogExtensionInfo;
 
@@ -70,4 +71,50 @@ test('check content', async () => {
 
   // check the click
   expect(window.open).toHaveBeenCalledWith('podman-desktop:extension/dummy1');
+});
+
+test('check platforms are displayed when the extension declares them', () => {
+  const version = {
+    version: '1.0.0',
+    files: [
+      {
+        assetType: 'icon',
+        data: 'http://fake-podman-desktop/my.icon.png',
+      },
+    ],
+  };
+  const extension: CatalogExtensionInfo = {
+    id: 'dummy1',
+    displayName: 'My Display Name',
+    shortDescription: 'My Description',
+    targetPlatforms: ['linux/amd64', 'darwin/arm64'],
+    versions: [version],
+  } as unknown as CatalogExtensionInfo;
+
+  render(ExtensionsDetailsTop, { extension });
+
+  expect(screen.getByText('Platforms: linux/amd64, darwin/arm64')).toBeInTheDocument();
+});
+
+test('check platforms are not displayed when the extension declares none', () => {
+  const version = {
+    version: '1.0.0',
+    files: [
+      {
+        assetType: 'icon',
+        data: 'http://fake-podman-desktop/my.icon.png',
+      },
+    ],
+  };
+  const extension: CatalogExtensionInfo = {
+    id: 'dummy1',
+    displayName: 'My Display Name',
+    shortDescription: 'My Description',
+    targetPlatforms: [],
+    versions: [version],
+  } as unknown as CatalogExtensionInfo;
+
+  render(ExtensionsDetailsTop, { extension });
+
+  expect(screen.queryByText(/Platforms:/)).not.toBeInTheDocument();
 });

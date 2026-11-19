@@ -104,6 +104,9 @@ export async function initCatalog(): Promise<void> {
             displayName: String(rawExtension.displayName),
             extensionName: String(rawExtension.extensionName),
             categories: Array.isArray(rawExtension.categories) ? rawExtension.categories.map(String) : [],
+            targetPlatforms: Array.isArray(rawExtension.targetPlatforms)
+              ? rawExtension.targetPlatforms.map(String)
+              : [],
             versions,
           };
           extensions.push(extension);
