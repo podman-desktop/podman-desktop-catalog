@@ -39,6 +39,7 @@ export interface CatalogExtensionInfo {
   displayName: string;
   keywords: string[];
   unlisted: boolean;
+  targetPlatforms?: string[];
   versions: CatalogExtensionVersionInfo[];
 }
 
