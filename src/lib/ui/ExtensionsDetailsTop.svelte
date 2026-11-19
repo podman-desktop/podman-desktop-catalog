@@ -18,6 +18,9 @@ function install(): void {
 		<div class="pl-4">
 			<div class="text-xl">{extension.displayName}</div>
 			<div class="">{extension.shortDescription}</div>
+			{#if extension.targetPlatforms.length > 0}
+				<div>Platforms: {extension.targetPlatforms.join(', ')}</div>
+			{/if}
 		</div>
 	</div>
 	<div>

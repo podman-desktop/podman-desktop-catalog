@@ -46,6 +46,7 @@ test('check content', async () => {
     id: 'dummy1',
     displayName: 'My Display Name',
     shortDescription: 'My Description',
+    targetPlatforms: [],
     versions: [version],
   } as unknown as CatalogExtensionInfo;
 
