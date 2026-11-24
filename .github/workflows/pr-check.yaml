@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2024 Red Hat, Inc.
+# Copyright (C) 2024-2026 Red Hat, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -74,3 +74,19 @@ jobs:
             echo "Found changes in git"
             exit 1
           fi
+
+  verify-extensions:
+    name: Verify extensions catalog
+    runs-on: ubuntu-26.04
+    timeout-minutes: 40
+    steps:
+      # The merge commit and its parents are enough to find the merge base with the base branch
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 2
+
+      - name: Fetch base branch
+        run: git fetch origin "${{ github.base_ref }}"
+
+      - name: Verify extensions
+        run: ./scripts/verify_extensions.sh "${{ github.base_ref }}"
