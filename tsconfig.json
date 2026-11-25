@@ -22,5 +22,5 @@
     "preserveValueImports": false,
     "types": ["$app/types", "@testing-library/jest-dom"]
   },
-  "include": ["src/app.d.ts", "src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"]
+  "include": ["src/app.d.ts", "src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte", "*.config.ts"]
 }
