@@ -16,13 +16,15 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-# This script checks if some version has been added to the extensions.json file
+# This script checks if some version has been added to the extensions.json file,
+# that every targetPlatforms is a non-empty list of "os/architecture" values (e.g. darwin/arm64),
 # and for each version:
 # - if the version is not already present in the repository
 # - if the files associated with the version are present in the repository
 # - if the version of the package in the image matches the version in the extensions.json
 # - if the name of the extension in the image matches the name in the extensions.json
 # - if the publisher name of the extension in the image matches the publisher name in the extensions.json
+# - if the target platforms of the extension in the image match the target platforms in the extensions.json
 #
 # The script exits with an error code if any of the checks fail.
 #
@@ -38,6 +40,62 @@ DEBUG=${DEBUG:-false}
 
 debug() {
   "$DEBUG" && echo "$1"
+}
+
+# Platforms Podman Desktop is built for: the operating system must be paired with a real architecture
+KNOWN_PLATFORM_PATTERN='\A(darwin|linux|windows)/(amd64|arm64)\z'
+# Operating systems Podman Desktop is built for
+KNOWN_OS_PATTERN='\A(darwin|linux|windows)/'
+# Any os/architecture value: syntactically valid but unverifiable on an unknown operating system
+OS_ARCH_PATTERN='\A[a-z0-9][a-z0-9._-]*/[a-z0-9][a-z0-9._-]*\z'
+
+# Check targetPlatforms of the given extensions.json is a non-empty list of "os/architecture" values
+validate_target_platforms() {
+  local json_file="$1"
+  INVALID_TARGET_PLATFORMS=$(
+    jq -r --arg known "$KNOWN_PLATFORM_PATTERN" --arg osArch "$OS_ARCH_PATTERN" --arg knownOs "$KNOWN_OS_PATTERN" '
+      .extensions[]
+      | select(has("targetPlatforms"))
+      | . as $extension
+      | select((.targetPlatforms | type) != "array" or (.targetPlatforms | length) == 0)
+      | "\($extension.extensionName): targetPlatforms must be a non-empty list"
+    ' "$json_file"
+  )
+  INVALID_TARGET_PLATFORMS+=$(
+    jq -r --arg known "$KNOWN_PLATFORM_PATTERN" --arg osArch "$OS_ARCH_PATTERN" --arg knownOs "$KNOWN_OS_PATTERN" '
+      .extensions[]
+      | select(has("targetPlatforms"))
+      | . as $extension
+      | select((.targetPlatforms | type) == "array")
+      | .targetPlatforms[]
+      | select((type == "string" and (test($known) or (test($osArch) and (test($knownOs) | not)))) | not)
+      | "\($extension.extensionName): invalid targetPlatform \(.)"
+    ' "$json_file"
+  )
+  if [ -n "$INVALID_TARGET_PLATFORMS" ]; then
+    echo "[ERROR] targetPlatforms must be a non-empty list of \"os/architecture\" values such as darwin/arm64 (darwin, linux and windows only support amd64 and arm64):"
+    echo "$INVALID_TARGET_PLATFORMS"
+    return 1
+  fi
+  debug "[OK] All targetPlatforms are valid"
+
+  # Values on an operating system Podman Desktop is not built for cannot be verified
+  UNVERIFIED_TARGET_PLATFORMS=$(
+    jq -r --arg known "$KNOWN_PLATFORM_PATTERN" --arg osArch "$OS_ARCH_PATTERN" --arg knownOs "$KNOWN_OS_PATTERN" '
+      .extensions[]
+      | select(has("targetPlatforms"))
+      | . as $extension
+      | select((.targetPlatforms | type) == "array")
+      | .targetPlatforms[]
+      | select(type == "string" and ((test($known)) | not) and test($osArch) and ((test($knownOs)) | not))
+      | "\($extension.extensionName): \(.)"
+    ' "$json_file"
+  )
+  if [ -n "$UNVERIFIED_TARGET_PLATFORMS" ]; then
+    echo "[WARN] Unverified target platforms (operating system Podman Desktop is not built for):"
+    echo "$UNVERIFIED_TARGET_PLATFORMS"
+  fi
+  return 0
 }
 
 # Check the files of the version are present in the repository
@@ -101,6 +159,20 @@ check_image_publisher() {
   return 0
 }
 
+# Check the target platforms of the extension in the image match the target platforms in the extensions.json
+check_image_target_platforms() {
+  local extension="$1"
+  local package_json_content="$2"
+  COMMIT_TARGET_PLATFORMS=$(echo "$extension" | jq -c '.targetPlatforms // [] | sort')
+  PACKAGE_TARGET_PLATFORMS=$(echo "$package_json_content" | jq -c '.targetPlatforms // [] | sort')
+  if [ "$PACKAGE_TARGET_PLATFORMS" != "$COMMIT_TARGET_PLATFORMS" ]; then
+    echo "[ERROR] Target platforms in image ($PACKAGE_TARGET_PLATFORMS) do not match the target platforms in the extensions.json ($COMMIT_TARGET_PLATFORMS)"
+    return 1
+  fi
+  debug "[OK] Target platforms in image ($PACKAGE_TARGET_PLATFORMS) match the target platforms in the extensions.json ($COMMIT_TARGET_PLATFORMS)"
+  return 0
+}
+
 # Stop here when sourced (e.g. by tests)
 if [[ "${BASH_SOURCE[0]}" != "$0" ]]; then
   return 0
@@ -115,6 +187,10 @@ if git diff --quiet "origin/$BASE_BRANCH...HEAD" -- static/api/extensions.json; 
   exit 0
 else
   debug "Changes found in static/api/extensions.json"
+
+  # Check targetPlatforms is a non-empty list of "os/architecture" values
+  validate_target_platforms static/api/extensions.json || exit 1
+
   CHANGES=$(comm -2 -3 \
     <(jq -r '.extensions[] | .versions[] | .ociUri' static/api/extensions.json | sort) \
     <(jq -r '.extensions[] | .versions[] | .ociUri' <(git show origin/main:static/api/extensions.json) | sort) \
@@ -156,6 +232,9 @@ else
 
     # Check the publisher name of the extension in the image
     check_image_publisher "$EXTENSION" "$PACKAGE_JSON_CONTENT" || exit 1
+
+    # Check the target platforms of the extension in the image
+    check_image_target_platforms "$EXTENSION" "$PACKAGE_JSON_CONTENT" || exit 1
   done
   exit 0
 fi
