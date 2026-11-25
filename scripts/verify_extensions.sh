@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2025 Red Hat, Inc.
+# Copyright (C) 2025-2026 Red Hat, Inc.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -40,6 +40,72 @@ debug() {
   "$DEBUG" && echo "$1"
 }
 
+# Check the files of the version are present in the repository
+check_files_present() {
+  local version="$1"
+  FILES=$(echo "$version" | jq -r '.files[] | .data')
+  PREFIX="https://registry.podman-desktop.io"
+  for file in $FILES; do
+    if [[ "$file" = "$PREFIX"* ]]; then
+      local_file="static${file#"$PREFIX"}"
+      if [ ! -f "$local_file" ]; then
+        echo -n "[ERROR] File not found: "; echo "$local_file"
+        echo -n "        referenced by: "; echo "$file"
+        return 1
+      fi
+    fi
+  done
+  debug "[OK] All files are present in the repository"
+  return 0
+}
+
+# Check the version of the package in the image matches the version in the extensions.json
+check_image_version() {
+  local version="$1"
+  local package_json_content="$2"
+  COMMIT_VERSION=$(echo "$version" | jq -r '.version')
+  PACKAGE_VERSION=$(echo "$package_json_content" | jq -r '.version')
+  if [ "$PACKAGE_VERSION" != "$COMMIT_VERSION" ]; then
+    echo "[ERROR] Package version in image ($PACKAGE_VERSION) does not match the version in the extensions.json ($COMMIT_VERSION)"
+    return 1
+  fi
+  debug "[OK] Package version in image ($PACKAGE_VERSION) matches the version in the extensions.json ($COMMIT_VERSION)"
+  return 0
+}
+
+# Check the name of the extension in the image matches the name in the extensions.json
+check_image_name() {
+  local extension="$1"
+  local package_json_content="$2"
+  COMMIT_NAME=$(echo "$extension" | jq -r '.extensionName')
+  PACKAGE_NAME=$(echo "$package_json_content" | jq -r '.name')
+  if [ "$PACKAGE_NAME" != "$COMMIT_NAME" ]; then
+    echo "[ERROR] Package name in image ($PACKAGE_NAME) does not match the name in the extensions.json ($COMMIT_NAME)"
+    return 1
+  fi
+  debug "[OK] Package name in image ($PACKAGE_NAME) matches the name in the extensions.json ($COMMIT_NAME)"
+  return 0
+}
+
+# Check the publisher name of the extension in the image matches the publisher name in the extensions.json
+check_image_publisher() {
+  local extension="$1"
+  local package_json_content="$2"
+  COMMIT_PUBLISHER=$(echo "$extension" | jq -r '.publisher.publisherName')
+  PACKAGE_PUBLISHER=$(echo "$package_json_content" | jq -r '.publisher')
+  if [ "$PACKAGE_PUBLISHER" != "$COMMIT_PUBLISHER" ]; then
+    echo "[ERROR] Publisher in image ($PACKAGE_PUBLISHER) does not match the publisher in the extensions.json ($COMMIT_PUBLISHER)"
+    return 1
+  fi
+  debug "[OK] Publisher in image ($PACKAGE_PUBLISHER) matches the publisher in the extensions.json ($COMMIT_PUBLISHER)"
+  return 0
+}
+
+# Stop here when sourced (e.g. by tests)
+if [[ "${BASH_SOURCE[0]}" != "$0" ]]; then
+  return 0
+fi
+
 BASE_BRANCH=${1:-main}
 debug "Base branch: $BASE_BRANCH"
 
@@ -71,19 +137,7 @@ else
     debug "$(echo -n "New version: "; echo "$VERSION" | jq .)"
 
     # Check the files are present in the repository
-    FILES=$(echo "$VERSION" | jq -r '.files[] | .data')
-    PREFIX="https://registry.podman-desktop.io"
-    for file in $FILES; do
-      if [[ "$file" = "$PREFIX"* ]]; then
-        local_file="static${file#"$PREFIX"}"
-        if [ ! -f "$local_file" ]; then
-          echo -n "[ERROR] File not found: "; echo "$local_file"
-          echo -n "        referenced by: "; echo "$file"
-          exit 1
-        fi
-      fi
-    done
-    debug "[OK] All files are present in the repository"
+    check_files_present "$VERSION" || exit 1
 
     # Check the content of the image pointed by ociUri
     CONTAINER_ID=$(podman create --quiet "$ociUri")
@@ -92,34 +146,16 @@ else
     podman rmi -f "$ociUri" > /dev/null
 
     # Check the version of the package in the image
-    COMMIT_VERSION=$(echo "$VERSION" | jq -r '.version')
-    PACKAGE_VERSION=$(echo "$PACKAGE_JSON_CONTENT" | jq -r '.version')
-    if [ "$PACKAGE_VERSION" != "$COMMIT_VERSION" ]; then
-      echo "[ERROR] Package version in image ($PACKAGE_VERSION) does not match the version in the extensions.json ($COMMIT_VERSION)"
-      exit 1
-    fi
-    debug "[OK] Package version in image ($PACKAGE_VERSION) matches the version in the extensions.json ($COMMIT_VERSION)"
+    check_image_version "$VERSION" "$PACKAGE_JSON_CONTENT" || exit 1
 
     ## get the extension containing the version
     EXTENSION=$(jq -r ".extensions[] | select(any(.versions[]; .ociUri==\"$ociUri\"))" static/api/extensions.json)
 
-    # Check the name of the extension in the image    
-    COMMIT_NAME=$(echo "$EXTENSION" | jq -r '.extensionName')
-    PACKAGE_NAME=$(echo "$PACKAGE_JSON_CONTENT" | jq -r '.name')
-    if [ "$PACKAGE_NAME" != "$COMMIT_NAME" ]; then
-      echo "[ERROR] Package name in image ($PACKAGE_NAME) does not match the name in the extensions.json ($COMMIT_NAME)"
-      exit 1
-    fi
-    debug "[OK] Package name in image ($PACKAGE_NAME) matches the name in the extensions.json ($COMMIT_NAME)"
+    # Check the name of the extension in the image
+    check_image_name "$EXTENSION" "$PACKAGE_JSON_CONTENT" || exit 1
 
     # Check the publisher name of the extension in the image
-    COMMIT_PUBLISHER=$(echo "$EXTENSION" | jq -r '.publisher.publisherName')
-    PACKAGE_PUBLISHER=$(echo "$PACKAGE_JSON_CONTENT" | jq -r '.publisher')
-    if [ "$PACKAGE_PUBLISHER" != "$COMMIT_PUBLISHER" ]; then
-      echo "[ERROR] Publisher in image ($PACKAGE_PUBLISHER) does not match the publisher in the extensions.json ($COMMIT_PUBLISHER)"
-      exit 1
-    fi
-    debug "[OK] Publisher in image ($PACKAGE_PUBLISHER) matches the publisher in the extensions.json ($COMMIT_PUBLISHER)"
+    check_image_publisher "$EXTENSION" "$PACKAGE_JSON_CONTENT" || exit 1
   done
   exit 0
 fi
