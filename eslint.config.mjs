@@ -97,7 +97,7 @@ export default [
       parserOptions: {
         extraFileExtensions: ['.svelte'],
         warnOnUnsupportedTypeScriptVersion: false,
-        project: ['./tsconfig.json', './tsconfig.node.json'],
+        project: ['./tsconfig.json'],
         tsconfigRootDir: __dirname,
       },
     },
