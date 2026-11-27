@@ -20,15 +20,21 @@ Mayfly is a preview. Expect rough edges, and please report them in [issues](http
 
 **Settings → General → Enable developer mode** adds the code, version history, logs and usage reports.
 
+## On your phone
+
+**Settings → General → Open apps from my phone** lets your phone open the apps over HTTPS through [Tailscale](https://tailscale.com), installed on the computer and the phone with the same account. Each app's **On your phone** shows a QR code to scan. The apps keep their localhost address, and nothing listens on your network.
+
 ## How it works
 
 The model writes only the app's routes, in one TypeScript file. Mayfly supplies sign-in, health checks, logs and the container settings, the same for every app. Before deploying a version, Mayfly builds it and tries it with no network and no privileges, and sends any failure back to the model.
 
-Each app runs as one pod: oauth2-proxy in front, on `127.0.0.1` only, and the app behind it. Sign-in comes from a local Dex, also on `127.0.0.1`, port 5556, which runs while any app does.
+Each app runs as one pod: oauth2-proxy in front, on `127.0.0.1` only, and the app behind it. Sign-in comes from a local Dex, also on `127.0.0.1`, which runs while any app does. It uses port 5556, or the next free one if another program holds that.
 
 ## What leaves your machine
 
 Your requests, their attachments and your apps' code go to the model provider you choose, with your key, which Podman Desktop stores. Apart from pulling its images from ghcr.io and quay.io, Mayfly contacts nothing else and collects no telemetry.
+
+With phone access on, Tailscale carries your phone's traffic, encrypted end to end, and the computer's Tailscale name appears in public certificate logs.
 
 ## Remove it
 

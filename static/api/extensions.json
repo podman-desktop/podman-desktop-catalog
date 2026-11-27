@@ -2946,23 +2946,23 @@
       "keywords": ["ai", "llm", "app builder", "openai", "hono", "oauth2-proxy", "dex", "sign-in"],
       "versions": [
         {
-          "version": "0.1.0",
+          "version": "0.2.0",
           "podmanDesktopVersion": ">=1.26.0",
           "preview": false,
           "lastUpdated": "2026-11-27T00:00:00Z",
-          "ociUri": "ghcr.io/jgalego/mayfly-extension:0.1.0",
+          "ociUri": "ghcr.io/jgalego/mayfly-extension:0.2.0",
           "files": [
             {
               "assetType": "icon",
-              "data": "https://registry.podman-desktop.io/api/extensions/jgalego/mayfly/0.1.0/icon.png"
+              "data": "https://registry.podman-desktop.io/api/extensions/jgalego/mayfly/0.2.0/icon.png"
             },
             {
               "assetType": "README",
-              "data": "https://registry.podman-desktop.io/api/extensions/jgalego/mayfly/0.1.0/README.md"
+              "data": "https://registry.podman-desktop.io/api/extensions/jgalego/mayfly/0.2.0/README.md"
             },
             {
               "assetType": "LICENSE",
-              "data": "https://registry.podman-desktop.io/api/extensions/jgalego/mayfly/0.1.0/LICENSE"
+              "data": "https://registry.podman-desktop.io/api/extensions/jgalego/mayfly/0.2.0/LICENSE"
             }
           ]
         }
