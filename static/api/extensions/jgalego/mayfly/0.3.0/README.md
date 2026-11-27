@@ -32,7 +32,7 @@ Each app runs as one pod: oauth2-proxy in front, on `127.0.0.1` only, and the ap
 
 ## What leaves your machine
 
-Your requests, their attachments and your apps' code go to the model provider you choose, with your key, which Podman Desktop stores. Apart from pulling its images from ghcr.io and quay.io, Mayfly contacts nothing else and collects no telemetry.
+Your requests, their attachments and your apps' code go to the model provider you choose, with your key, which Podman Desktop stores. Emails to people you share apps with go through the mail server you set up, if you set one up. Apart from pulling its images from ghcr.io and quay.io, Mayfly contacts nothing else and collects no telemetry.
 
 With phone access on, Tailscale carries your phone's traffic, encrypted end to end, and the computer's Tailscale name appears in public certificate logs.
 
